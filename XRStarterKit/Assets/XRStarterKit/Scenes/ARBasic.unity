@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571343, b: 0.30692208, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -497,7 +497,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _obsoleteAppKey: 
   _normcoreAppSettings: {fileID: 11400000, guid: 4f60d3fdaff708c43a1d49031fcf4a82, type: 2}
-  _roomToJoinOnStart: AR Room
+  _roomToJoinOnStart: 4Sight Room
   _joinRoomOnStart: 1
 --- !u!4 &1482300895
 Transform:
