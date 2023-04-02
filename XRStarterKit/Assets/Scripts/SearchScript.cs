@@ -26,6 +26,7 @@ public class SearchScript : MonoBehaviour
     {
         foreach (GameObject element in Elements)
         {
+            Debug.Log(element.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text);
             element.SetActive(true);
         }
         
