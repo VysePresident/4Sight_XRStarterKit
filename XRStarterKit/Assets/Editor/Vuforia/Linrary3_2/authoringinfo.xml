@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<QCARInfo>
+    <TargetSet version="3.4">
+        <AreaTarget version="5.1" bbox="-18.8343 -9.8066 -38.5629 33.0151 3.0188 23.2319" targetId="41490af058d54632bf70552a65440d03" name="Linrary3_2" pathAuthoring="41490af058d54632bf70552a65440d03_authoring.glb" pathOcclusion="41490af058d54632bf70552a65440d03_occlusion.3dt" pathNavMesh="41490af058d54632bf70552a65440d03_navmesh.glb" cloudTarget="false" />
+    </TargetSet>
+</QCARInfo>
