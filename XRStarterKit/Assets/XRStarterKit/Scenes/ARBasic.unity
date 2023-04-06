@@ -524,20 +524,20 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: Lab
+  mTrackableName: Linrary3_2
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Lab.xml
-  AuthoringModelPath: 9ab67c6a1ca54674ba4504619ffe9515_authoring.glb
-  OcclusionModelPath: 9ab67c6a1ca54674ba4504619ffe9515_occlusion.3dt
-  ClipHeight: 2.01175
+  mDataSetPath: Vuforia/Linrary3_2.xml
+  AuthoringModelPath: 41490af058d54632bf70552a65440d03_authoring.glb
+  OcclusionModelPath: 41490af058d54632bf70552a65440d03_occlusion.3dt
+  ClipHeight: 3.66007
   mSize: {x: 0, y: 0, z: 0}
   mBoundingBox:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
-  mNavMeshModelPath: 9ab67c6a1ca54674ba4504619ffe9515_navmesh.glb
+  mNavMeshModelPath: 41490af058d54632bf70552a65440d03_navmesh.glb
   mVersion: 5.1
-  mBBoxMin: {x: -8.7183, y: -3.7202, z: -8.0937}
-  mBBoxMax: {x: 8.2514, y: 1.7388, z: 8.8111}
+  mBBoxMin: {x: -18.8343, y: -9.8066, z: -38.5629}
+  mBBoxMax: {x: 33.0151, y: 3.0188, z: 23.2319}
   mModelMesh: {fileID: 0}
   mRequiresExternalPositions: 0
   mPreview: {fileID: 844946315}
@@ -572,8 +572,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 844946313}
   mHiddenRoot: {fileID: 0}
-  mTargetName: Lab
-  mDatasetName: Vuforia/Lab.xml
+  mTargetName: Linrary3_2
+  mDatasetName: Vuforia/Linrary3_2.xml
   mCastedBehaviour: {fileID: 844946313}
   mType: 1
 --- !u!1 &1052600749
