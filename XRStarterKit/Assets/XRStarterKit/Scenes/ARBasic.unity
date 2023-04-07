@@ -475,20 +475,20 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: Lab
+  mTrackableName: Lobrary3
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Lab.xml
-  AuthoringModelPath: 9ab67c6a1ca54674ba4504619ffe9515_authoring.glb
-  OcclusionModelPath: 9ab67c6a1ca54674ba4504619ffe9515_occlusion.3dt
-  ClipHeight: 2.01175
+  mDataSetPath: Vuforia/Lobrary3.xml
+  AuthoringModelPath: bf400c95c9e74368b02ee281be843145_authoring.glb
+  OcclusionModelPath: bf400c95c9e74368b02ee281be843145_occlusion.3dt
+  ClipHeight: 0.61160004
   mSize: {x: 0, y: 0, z: 0}
   mBoundingBox:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
-  mNavMeshModelPath: 9ab67c6a1ca54674ba4504619ffe9515_navmesh.glb
+  mNavMeshModelPath: bf400c95c9e74368b02ee281be843145_navmesh.glb
   mVersion: 5.1
-  mBBoxMin: {x: -8.7183, y: -3.7202, z: -8.0937}
-  mBBoxMax: {x: 8.2514, y: 1.7388, z: 8.8111}
+  mBBoxMin: {x: -25.8356, y: -11.6356, z: -18.1615}
+  mBBoxMax: {x: 10.7864, y: 0.0284, z: 13.4812}
   mModelMesh: {fileID: 0}
   mRequiresExternalPositions: 0
   mPreview: {fileID: 844946315}
@@ -523,8 +523,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 844946313}
   mHiddenRoot: {fileID: 0}
-  mTargetName: Lab
-  mDatasetName: Vuforia/Lab.xml
+  mTargetName: Lobrary3
+  mDatasetName: Vuforia/Lobrary3.xml
   mCastedBehaviour: {fileID: 844946313}
   mType: 1
 --- !u!1 &1052600749

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<QCARInfo>
+    <TargetSet version="3.4">
+        <AreaTarget version="5.1" bbox="-25.8356 -11.6356 -18.1615 10.7864 0.0284 13.4812" targetId="bf400c95c9e74368b02ee281be843145" name="Lobrary3" pathAuthoring="bf400c95c9e74368b02ee281be843145_authoring.glb" pathOcclusion="bf400c95c9e74368b02ee281be843145_occlusion.3dt" pathNavMesh="bf400c95c9e74368b02ee281be843145_navmesh.glb" cloudTarget="false" />
+    </TargetSet>
+</QCARInfo>
