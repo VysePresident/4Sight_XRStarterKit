@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571336, b: 0.3069219, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3024,6 +3024,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 826308635}
   m_CullTransparentMesh: 1
+--- !u!1 &844002648 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6001164815928888006, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
+  m_PrefabInstance: {fileID: 626919531}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &849796359
 GameObject:
   m_ObjectHideFlags: 0
@@ -3704,6 +3709,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965376469}
   m_CullTransparentMesh: 1
+--- !u!1 &974980244 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6001164815928888006, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
+  m_PrefabInstance: {fileID: 6001164815303217888}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &979911723
 GameObject:
   m_ObjectHideFlags: 0
@@ -5982,6 +5992,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1454210070
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1454210072}
+  - component: {fileID: 1454210071}
+  m_Layer: 0
+  m_Name: FurnitureManagerObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1454210071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454210070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e5a5938d6e78e40b7793fb96add8cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1454210072
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454210070}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 694.77655, y: 517.2802, z: -122.383545}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1454755589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6472,6 +6526,21 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6001164815928888007, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
   m_PrefabInstance: {fileID: 6001164815303217888}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1522210856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974980244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9865a67cfce5e974f9bf74c0580789ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  furniturePrefab: {fileID: 7624070237541074139, guid: 2d5da6ebed3d1dc4db41b66b5eac1997, type: 3}
+  furnitureManager: {fileID: 1454210071}
+  vuforiaSceneBuildIndex: 0
 --- !u!1001 &1541418121
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6714,6 +6783,19 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6001164815928888007, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
   m_PrefabInstance: {fileID: 626919531}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1565341216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844002648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d06956ae47ddff14994aabc66d382207, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vuforiaSceneBuildIndex: 0
 --- !u!1 &1600732207
 GameObject:
   m_ObjectHideFlags: 0
@@ -9032,6 +9114,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2054773911}
   m_CullTransparentMesh: 1
+--- !u!1 &2075679246 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6001164816238127334, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
+  m_PrefabInstance: {fileID: 6001164815303217888}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2075679248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075679246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e1935213fb60214e802a99717b14d99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Reticle: {fileID: 0}
+  Speed: 1.2
+  IsLocked: 0
 --- !u!224 &2107747701 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8692498639463965955, guid: 582d67755cd9b4d5bad40072d7e2fcdf, type: 3}
