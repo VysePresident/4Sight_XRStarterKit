@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 public class FurnitureButton : MonoBehaviour
 {
 	public GameObject furniturePrefab;
-	public VuforiaFurnitureManager furnitureManager;
 	public int vuforiaSceneBuildIndex;
 
 	private Button button;
@@ -16,21 +15,14 @@ public class FurnitureButton : MonoBehaviour
 		button.onClick.AddListener(OnClick);
 	}
 
-	private void OnClick()
+	public void OnClick()
 	{
-		Debug.Log("Button clicked");
-		furnitureManager.SpawnFurniture(furniturePrefab);
-		Debug.Log("Requesting Vuforia scene load");
+		Debug.Log("Open in AR button clicked");
 
-		LoadVuforiaScene loadVuforiaScene = FindObjectOfType<LoadVuforiaScene>();
-		if (loadVuforiaScene != null)
-		{
-			loadVuforiaScene.LoadScene();
-		}
-		else
-		{
-			Debug.LogError("LoadVuforiaScene script not found in the scene");
-		}
+		// Save the selected prefab to PlayerPrefs
+		PlayerPrefs.SetString("SelectedFurniture", furniturePrefab.name);
+
+		// Load the Vuforia scene
+		SceneManager.LoadScene(vuforiaSceneBuildIndex);
 	}
-
 }

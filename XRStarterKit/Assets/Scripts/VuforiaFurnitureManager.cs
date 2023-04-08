@@ -1,14 +1,23 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
 using Vuforia;
 
 public class VuforiaFurnitureManager : MonoBehaviour
 {
-
 	private GameObject activeFurniture;
 	private bool isPlaced;
 
-	void Update()
+	private void Awake()
+	{
+		// Load the selected furniture from PlayerPrefs
+		string furnitureName = PlayerPrefs.GetString("SelectedFurniture");
+
+		// Instantiate the furniture prefab
+		GameObject prefab = Resources.Load<GameObject>("Furniture/Prefabs/" + furnitureName);
+
+		SpawnFurniture(prefab);
+	}
+
+	private void Update()
 	{
 		if (activeFurniture == null || isPlaced)
 			return;
@@ -27,15 +36,11 @@ public class VuforiaFurnitureManager : MonoBehaviour
 		// Check for touches or mouse clicks
 		if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began || Input.GetMouseButtonDown(0))
 		{
-			if (!EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId) && !EventSystem.current.IsPointerOverGameObject())
-			{
-				isPlaced = true;
-				activeFurniture = null;
-			}
+			isPlaced = true;
+			activeFurniture = null;
 		}
 	}
 
-	// Add a new method to spawn the furniture prefab
 	public void SpawnFurniture(GameObject prefab)
 	{
 		if (activeFurniture != null)

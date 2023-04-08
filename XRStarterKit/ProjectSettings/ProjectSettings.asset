@@ -808,6 +808,7 @@ PlayerSettings:
   scriptingDefineSymbols:
     Android: NORMCORE
     Standalone: NORMCORE
+    iPhone: NORMCORE
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:

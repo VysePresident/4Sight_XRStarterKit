@@ -2048,6 +2048,52 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 582d67755cd9b4d5bad40072d7e2fcdf, type: 3}
+--- !u!1 &490859272
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 490859274}
+  - component: {fileID: 490859273}
+  m_Layer: 0
+  m_Name: FurnitureManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &490859273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490859272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9865a67cfce5e974f9bf74c0580789ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  furniturePrefab: {fileID: 8757825814237500909, guid: d9e6213ffc5943b4db8396985aa3f894, type: 3}
+  vuforiaSceneBuildIndex: 0
+--- !u!4 &490859274
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490859272}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 98.60574, y: 216.62323, z: -822.99225}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &569406819 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8692498639463965955, guid: 582d67755cd9b4d5bad40072d7e2fcdf, type: 3}
@@ -2541,6 +2587,34 @@ PrefabInstance:
     - target: {fileID: 6001164815928888007, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 490859273}
+    - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: FurnitureButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
@@ -3709,11 +3783,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965376469}
   m_CullTransparentMesh: 1
---- !u!1 &974980244 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6001164815928888006, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
-  m_PrefabInstance: {fileID: 6001164815303217888}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &979911723
 GameObject:
   m_ObjectHideFlags: 0
@@ -3953,6 +4022,34 @@ PrefabInstance:
     - target: {fileID: 6001164815928888007, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 490859273}
+    - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: FurnitureButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
@@ -5992,50 +6089,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1454210070
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1454210072}
-  - component: {fileID: 1454210071}
-  m_Layer: 0
-  m_Name: FurnitureManagerObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1454210071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1454210070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45e5a5938d6e78e40b7793fb96add8cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1454210072
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1454210070}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 694.77655, y: 517.2802, z: -122.383545}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1454755589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6526,21 +6579,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6001164815928888007, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
   m_PrefabInstance: {fileID: 6001164815303217888}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1522210856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 974980244}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9865a67cfce5e974f9bf74c0580789ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  furniturePrefab: {fileID: 7624070237541074139, guid: 2d5da6ebed3d1dc4db41b66b5eac1997, type: 3}
-  furnitureManager: {fileID: 1454210071}
-  vuforiaSceneBuildIndex: 0
 --- !u!1001 &1541418121
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9444,6 +9482,42 @@ PrefabInstance:
     - target: {fileID: 6001164815928888007, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11500000, guid: bdc357c96b16d41e9894973a2440aa45, type: 3}
+    - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 490859273}
+    - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: FurnitureButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
