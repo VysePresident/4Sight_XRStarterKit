@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class FurnitureButton : MonoBehaviour
 {
-	public GameObject furniturePrefab;
+	public string furniturePrefabName;
 	public int vuforiaSceneBuildIndex;
 
 	private Button button;
@@ -17,12 +17,7 @@ public class FurnitureButton : MonoBehaviour
 
 	public void OnClick()
 	{
-		Debug.Log("Open in AR button clicked");
-
-		// Save the selected prefab to PlayerPrefs
-		PlayerPrefs.SetString("SelectedFurniture", furniturePrefab.name);
-
-		// Load the Vuforia scene
+		PlayerPrefs.SetString("SelectedFurniture", furniturePrefabName);
 		SceneManager.LoadScene(vuforiaSceneBuildIndex);
 	}
 }

@@ -2057,7 +2057,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 490859274}
-  - component: {fileID: 490859273}
+  - component: {fileID: 490859275}
   m_Layer: 0
   m_Name: FurnitureManager
   m_TagString: Untagged
@@ -2065,20 +2065,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &490859273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 490859272}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9865a67cfce5e974f9bf74c0580789ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  furniturePrefab: {fileID: 8757825814237500909, guid: d9e6213ffc5943b4db8396985aa3f894, type: 3}
-  vuforiaSceneBuildIndex: 0
 --- !u!4 &490859274
 Transform:
   m_ObjectHideFlags: 0
@@ -2094,6 +2080,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &490859275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490859272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3af22746ff29def42a67b202bc6b602f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &518951871 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6001164815928888006, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
+  m_PrefabInstance: {fileID: 1065272209}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &569406819 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8692498639463965955, guid: 582d67755cd9b4d5bad40072d7e2fcdf, type: 3}
@@ -2599,7 +2602,7 @@ PrefabInstance:
     - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 490859273}
+      objectReference: {fileID: 0}
     - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
@@ -2851,6 +2854,11 @@ Transform:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6001164815928888007, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
   m_PrefabInstance: {fileID: 1541418121}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &724223371 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6001164815928888006, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
+  m_PrefabInstance: {fileID: 6001164815303217888}
   m_PrefabAsset: {fileID: 0}
 --- !u!224 &734740369 stripped
 RectTransform:
@@ -3623,6 +3631,20 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6001164815928888007, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
   m_PrefabInstance: {fileID: 1065272209}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &920137622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518951871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9865a67cfce5e974f9bf74c0580789ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  furniturePrefabName: chair
+  vuforiaSceneBuildIndex: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -4034,7 +4056,7 @@ PrefabInstance:
     - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 490859273}
+      objectReference: {fileID: 0}
     - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
@@ -6579,6 +6601,20 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6001164815928888007, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
   m_PrefabInstance: {fileID: 6001164815303217888}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1522210860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724223371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9865a67cfce5e974f9bf74c0580789ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  furniturePrefabName: Couch
+  vuforiaSceneBuildIndex: 0
 --- !u!1001 &1541418121
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6833,6 +6869,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d06956ae47ddff14994aabc66d382207, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vuforiaSceneBuildIndex: 0
+--- !u!114 &1565341221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844002648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9865a67cfce5e974f9bf74c0580789ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  furniturePrefabName: 3Seat3
   vuforiaSceneBuildIndex: 0
 --- !u!1 &1600732207
 GameObject:
@@ -9485,7 +9535,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -9494,26 +9548,34 @@ PrefabInstance:
     - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 11500000, guid: bdc357c96b16d41e9894973a2440aa45, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 490859273}
+      objectReference: {fileID: 0}
     - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: OnClick
       objectReference: {fileID: 0}
     - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: OnClick
       objectReference: {fileID: 0}
     - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FurnitureButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: FurnitureButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6001164815928888008, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName

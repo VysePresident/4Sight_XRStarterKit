@@ -568,20 +568,20 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: Linrary3_2
+  mTrackableName: PGH
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Linrary3_2.xml
-  AuthoringModelPath: 41490af058d54632bf70552a65440d03_authoring.glb
-  OcclusionModelPath: 41490af058d54632bf70552a65440d03_occlusion.3dt
-  ClipHeight: 3.66007
+  mDataSetPath: Vuforia/PGH.xml
+  AuthoringModelPath: 67b6ff147aa4431bb468a00bf115ca10_authoring.glb
+  OcclusionModelPath: 67b6ff147aa4431bb468a00bf115ca10_occlusion.3dt
+  ClipHeight: 3.05031
   mSize: {x: 0, y: 0, z: 0}
   mBoundingBox:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
-  mNavMeshModelPath: 41490af058d54632bf70552a65440d03_navmesh.glb
+  mNavMeshModelPath: 67b6ff147aa4431bb468a00bf115ca10_navmesh.glb
   mVersion: 5.1
-  mBBoxMin: {x: -18.8343, y: -9.8066, z: -38.5629}
-  mBBoxMax: {x: 33.0151, y: 3.0188, z: 23.2319}
+  mBBoxMin: {x: -11.0176, y: -3.0756, z: -24.9761}
+  mBBoxMax: {x: 2.4934, y: 2.7586, z: 4.6304}
   mModelMesh: {fileID: 0}
   mRequiresExternalPositions: 0
   mPreview: {fileID: 844946315}
@@ -616,8 +616,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 844946313}
   mHiddenRoot: {fileID: 0}
-  mTargetName: Linrary3_2
-  mDatasetName: Vuforia/Linrary3_2.xml
+  mTargetName: PGH
+  mDatasetName: Vuforia/PGH.xml
   mCastedBehaviour: {fileID: 844946313}
   mType: 1
 --- !u!1 &1052600749
