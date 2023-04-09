@@ -20,4 +20,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/XRStarterKit/Scenes/WHATSCENE.unity
     guid: 659820a5933a70047bc820f306d43809
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 5b2a5748677d7c44da7f65cf024435e0, type: 2}
