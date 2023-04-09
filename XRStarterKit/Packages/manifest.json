@@ -1,27 +1,17 @@
 {
-  "scopedRegistries": [
-    {
-      "name": "Normal",
-      "url": "https://normcore-registry.normcore.io",
-      "scopes": [
-        "com.normalvr",
-        "io.normcore"
-      ]
-    }
-  ],
-  "dependencies": {
-    "com.microsoft.mixedreality.toolkit.examples": "file:MixedReality/com.microsoft.mixedreality.toolkit.examples-2.8.3.tgz",
-    "com.microsoft.mixedreality.toolkit.extensions": "file:MixedReality/com.microsoft.mixedreality.toolkit.extensions-2.8.3.tgz",
-    "com.microsoft.mixedreality.toolkit.figmabridge": "file:MixedReality/com.microsoft.mixedreality.toolkit.figmabridge-0.1.1.tgz",
-    "com.microsoft.mixedreality.toolkit.foundation": "file:MixedReality/com.microsoft.mixedreality.toolkit.foundation-2.8.3.tgz",
-    "com.microsoft.mixedreality.toolkit.gpustats": "file:MixedReality/com.microsoft.mixedreality.toolkit.gpustats-1.0.3.tgz",
-    "com.microsoft.mixedreality.toolkit.micstream": "file:MixedReality/com.microsoft.mixedreality.toolkit.micstream-1.0.0.tgz",
-    "com.microsoft.mixedreality.toolkit.planefinding": "file:MixedReality/com.microsoft.mixedreality.toolkit.planefinding-1.0.0.tgz",
-    "com.microsoft.mixedreality.toolkit.standardassets": "file:MixedReality/com.microsoft.mixedreality.toolkit.standardassets-2.8.3.tgz",
-    "com.microsoft.mixedreality.toolkit.testutilities": "file:MixedReality/com.microsoft.mixedreality.toolkit.testutilities-2.8.3.tgz",
-    "com.microsoft.mixedreality.toolkit.tools": "file:MixedReality/com.microsoft.mixedreality.toolkit.tools-2.8.3.tgz",
+    "scopedRegistries": [
+        {
+            "name": "Normal",
+            "url": "https://normcore-registry.normcore.io",
+            "scopes": [
+                "com.normalvr",
+                "io.normcore"
+            ]
+        }
+    ],
+    "dependencies": {
     "com.normalvr.normcore": "2.4.1",
-    "com.ptc.vuforia.engine": "file:com.ptc.vuforia.engine-10.13.3.tgz",
+    "com.ptc.vuforia.engine": "file:com.ptc.vuforia.engine-10.14.4.tgz",
     "com.unity.collab-proxy": "2.0.0",
     "com.unity.feature.development": "1.0.1",
     "com.unity.ide.rider": "3.0.18",
@@ -33,7 +23,6 @@
     "com.unity.ugui": "1.0.0",
     "com.unity.visualscripting": "1.8.0",
     "com.unity.xr.arfoundation": "4.2.7",
-    "com.unity.xr.openxr": "1.7.0",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
