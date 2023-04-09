@@ -2048,50 +2048,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 582d67755cd9b4d5bad40072d7e2fcdf, type: 3}
---- !u!1 &490859272
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 490859274}
-  - component: {fileID: 490859275}
-  m_Layer: 0
-  m_Name: FurnitureManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &490859274
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 490859272}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 98.60574, y: 216.62323, z: -822.99225}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &490859275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 490859272}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3af22746ff29def42a67b202bc6b602f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &518951871 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6001164815928888006, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
@@ -6857,19 +6813,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6001164815928888007, guid: 156cd676a44fa49d59eab3f4a05ec48d, type: 3}
   m_PrefabInstance: {fileID: 626919531}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1565341216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844002648}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d06956ae47ddff14994aabc66d382207, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vuforiaSceneBuildIndex: 0
 --- !u!114 &1565341221
 MonoBehaviour:
   m_ObjectHideFlags: 0

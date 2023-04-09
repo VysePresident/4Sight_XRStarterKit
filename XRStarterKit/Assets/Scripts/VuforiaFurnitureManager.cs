@@ -3,7 +3,7 @@ using Vuforia;
 
 public class VuforiaFurnitureManager : MonoBehaviour
 {
-	private GameObject activeFurniture;
+	public GameObject activeFurniture;
 	private bool isPlaced;
 
 	private void Awake()
@@ -13,7 +13,7 @@ public class VuforiaFurnitureManager : MonoBehaviour
 
 		// Instantiate the furniture prefab
 		GameObject prefab = Resources.Load<GameObject>("Furniture/Prefabs/" + furnitureName);
-		SpawnFurniture(prefab);
+		//SpawnFurniture(prefab);
 	}
 	/*
 		private void Update()
