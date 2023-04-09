@@ -6,7 +6,7 @@ public class VuforiaPlaneFinderFurnitureManager : MonoBehaviour
 	private GameObject activeFurniture;
 	private bool isPlaced;
 
-	private void Awake()
+	private void Start()
 	{
 		// Load the selected furniture from PlayerPrefs
 		string furnitureName = PlayerPrefs.GetString("SelectedFurniture");
