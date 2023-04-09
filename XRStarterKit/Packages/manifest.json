@@ -1,17 +1,17 @@
 {
-  "scopedRegistries": [
-    {
-      "name": "Normal",
-      "url": "https://normcore-registry.normcore.io",
-      "scopes": [
-        "com.normalvr",
-        "io.normcore"
-      ]
-    }
-  ],
-  "dependencies": {
+    "scopedRegistries": [
+        {
+            "name": "Normal",
+            "url": "https://normcore-registry.normcore.io",
+            "scopes": [
+                "com.normalvr",
+                "io.normcore"
+            ]
+        }
+    ],
+    "dependencies": {
     "com.normalvr.normcore": "2.4.1",
-    "com.ptc.vuforia.engine": "file:com.ptc.vuforia.engine-10.13.3.tgz",
+    "com.ptc.vuforia.engine": "file:com.ptc.vuforia.engine-10.14.4.tgz",
     "com.unity.collab-proxy": "2.0.0",
     "com.unity.feature.development": "1.0.1",
     "com.unity.ide.rider": "3.0.18",

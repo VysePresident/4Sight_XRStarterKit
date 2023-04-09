@@ -1,5 +1,10 @@
 XRStarterKit/Packages/com.ptc.vuforia.engine-10.13.3.tgz filter=lfs diff=lfs merge=lfs -text
 
+# ALEX BURNS : Test for branch.  Delete if issues arise.
+*.tgz filter=lfs diff=lfs merge=lfs -text
+# ALSO ALEX
+com.ptc.vuforia.engine-10.14.4.tgz filter=lfs diff=lfs merge=lfs -text
+
 # Macro for Unity YAML-based asset files.
 [attr]unityyaml -text merge=unityyamlmerge diff
 
