@@ -11,14 +11,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/XRStarterKit/Scenes/ShopMenuScene.unity
     guid: 00c20f5b921ce4e379567358d8c33243
-  - enabled: 1
+  - enabled: 0
     path: Assets/XRStarterKit/Scenes/FurniturePlacement.unity
     guid: 4f835e91cc4cbc94eaa92e4255b2a221
-  - enabled: 1
+  - enabled: 0
     path: Assets/XRStarterKit/Scenes/VRBasic.unity
     guid: f24adc0151ee99e42b721169cdfa3046
-  - enabled: 1
+  - enabled: 0
     path: Assets/XRStarterKit/Scenes/WHATSCENE.unity
     guid: 659820a5933a70047bc820f306d43809
   m_configObjects:
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 5b2a5748677d7c44da7f65cf024435e0, type: 2}
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 8a56fad9beb30cf4c9e2c8d2b63dc2ae,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a88b80b0b5f8e9a49a77c39bf65f02ed,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 5b2a5748677d7c44da7f65cf024435e0,
+      type: 2}
