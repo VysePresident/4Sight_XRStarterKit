@@ -809,9 +809,9 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Android: NORMCORE;VUFORIA_ANDROID_SETTINGS
-    Standalone: NORMCORE
-    Windows Store Apps: VUFORIA_WSA_SETTINGS
+    Android: NORMCORE;VUFORIA_ANDROID_SETTINGS;USE_INPUT_SYSTEM_POSE_CONTROL
+    Standalone: NORMCORE;USE_INPUT_SYSTEM_POSE_CONTROL
+    Windows Store Apps: VUFORIA_WSA_SETTINGS;USE_INPUT_SYSTEM_POSE_CONTROL
     iPhone: VUFORIA_IOS_SETTINGS
   additionalCompilerArguments: {}
   platformArchitecture: {}
