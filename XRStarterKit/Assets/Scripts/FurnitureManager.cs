@@ -4,13 +4,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 
+using Microsoft.MixedReality.Toolkit.UI;
+using Microsoft.MixedReality.Toolkit.UI.BoundsControl;
+
 public class FurnitureManager : MonoBehaviour
 {
     public GameObject FurniturePrefab;
     public ReticleBehavior Reticle;
     public FurnitureSurfaceManager FurnitureSurfaceManager;
-
-    public FurnitureBehavior Furniture;
+	public GameObject appBarPrefab;
+	public FurnitureBehavior Furniture;
     public bool IsLocked = false;
 
     private void Update()
@@ -22,7 +25,11 @@ public class FurnitureManager : MonoBehaviour
             Furniture.Reticle = Reticle;
             Furniture.transform.position = Reticle.transform.position;
             FurnitureSurfaceManager.LockPlane(Reticle.CurrentPlane);
-        }
+
+			GameObject newAppBar = Instantiate(appBarPrefab, Reticle.transform.position, Quaternion.identity);
+			AppBar appBarComponent = newAppBar.GetComponent<AppBar>();
+			appBarComponent.Target = obj.GetComponent<BoundsControl>();
+		}
         if(Furniture != null && WasTapped()) {
             IsLocked = !IsLocked;
             Furniture.IsLocked = IsLocked;
