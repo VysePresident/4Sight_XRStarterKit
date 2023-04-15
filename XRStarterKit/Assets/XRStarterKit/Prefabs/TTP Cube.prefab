@@ -168,12 +168,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6989015e8e325c545a541addbd062437, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idle: 0
+  idle: 1
   selected: 0
   moving: 0
   rotating: 0
+  locked: 0
   originalMaterial: {fileID: 2100000, guid: 2bb38d58001d8d444803cf25ed380bc8, type: 2}
   selectedMaterial: {fileID: 2100000, guid: 338b88ec0f3c0c84695a2a085b1d2f4e, type: 2}
+  cantSelectMaterial: {fileID: 2100000, guid: 684f4872f6624da4c90c243edd439f76, type: 2}
   childObject: {fileID: 5112230765491165134}
 --- !u!1 &5112230765491165134
 GameObject:
