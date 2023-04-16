@@ -24,6 +24,11 @@ public class TapToMakeAppear : MonoBehaviour
         
     }
 
+    private void Start()
+    {
+        cubePrefab = FurnitureController.FurnitureToPlace;
+    }
+
     // Update is called once per frame
     void Update()
     {

@@ -565,8 +565,8 @@ GameObject:
   - component: {fileID: 844946313}
   - component: {fileID: 844946312}
   - component: {fileID: 844946315}
-  - component: {fileID: 844946316}
   - component: {fileID: 844946317}
+  - component: {fileID: 844946318}
   m_Layer: 0
   m_Name: AreaTarget
   m_TagString: Untagged
@@ -649,7 +649,7 @@ MonoBehaviour:
   mBBoxMax: {x: 33.0151, y: 3.0188, z: 23.2319}
   mModelMesh: {fileID: 0}
   mRequiresExternalPositions: 0
-  mPreview: {fileID: 844946316}
+  mPreview: {fileID: 844946318}
 --- !u!4 &844946314
 Transform:
   m_ObjectHideFlags: 0
@@ -680,24 +680,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!114 &844946316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844946310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1973558268, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 844946313}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: Linrary3_2
-  mDatasetName: Vuforia/Linrary3_2.xml
-  mCastedBehaviour: {fileID: 844946313}
-  mType: 1
 --- !u!23 &844946317
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -740,6 +722,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &844946318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844946310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1973558268, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 844946313}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Linrary3_2
+  mDatasetName: Vuforia/Linrary3_2.xml
+  mCastedBehaviour: {fileID: 844946313}
+  mType: 1
 --- !u!1 &1052600749
 GameObject:
   m_ObjectHideFlags: 0
@@ -1149,8 +1149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4e4450c66ae61d489b6a8426a6c6fff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cubePrefab: {fileID: 1861168696414987438, guid: 013a5da7d2b6b5e429223582c465f137,
-    type: 3}
+  cubePrefab: {fileID: 1427137913}
   mode: 0
 --- !u!4 &1584456172
 Transform:
