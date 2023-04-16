@@ -551,6 +551,7 @@ MonoBehaviour:
     type: 3}
   Reticle: {fileID: 1607440003}
   FurnitureSurfaceManager: {fileID: 1689275089}
+  appBarPrefab: {fileID: 0}
   Furniture: {fileID: 0}
   IsLocked: 0
 --- !u!4 &821204467
@@ -755,6 +756,12 @@ MonoBehaviour:
   mDatasetName: Vuforia/Linrary3_2.xml
   mCastedBehaviour: {fileID: 844946313}
   mType: 1
+--- !u!1 &1042847178 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1275815092924048, guid: 83c02591e2867124181bcd3bcb65e288,
+    type: 3}
+  m_PrefabInstance: {fileID: 1243886304}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1052600749
 GameObject:
   m_ObjectHideFlags: 0
@@ -1429,6 +1436,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TTP Cube
       objectReference: {fileID: 0}
+    - target: {fileID: 1861168696414987438, guid: 013a5da7d2b6b5e429223582c465f137,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1861168696414987472, guid: 013a5da7d2b6b5e429223582c465f137,
         type: 3}
       propertyPath: m_RootOrder
@@ -1516,6 +1528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cubePrefab: {fileID: 1427137913}
+  appBarPrefab: {fileID: 1042847178}
   mode: 0
 --- !u!4 &1584456172
 Transform:
