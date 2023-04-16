@@ -1,19 +1,19 @@
 using Microsoft.MixedReality.Toolkit.UI;
-using Microsoft.MixedReality.Toolkit.UI.BoundsControl;
 using UnityEngine;
 
-public class AppBarPositioning : MonoBehaviour
+public class AppBarPositioning: MonoBehaviour
 {
 	public AppBar appBar;
-	public BoundsControl target;
+	public GameObject targetObject;
+	public float yOffset = -0.5f;
 
-	private void Start()
+	void Update()
 	{
-		if (appBar == null || target == null) return;
-	}
-
-	private void Update()
-	{
-		appBar.transform.position = target.gameObject.transform.position;
+		if (appBar != null && targetObject != null)
+		{
+			Bounds bounds = targetObject.GetComponent<Collider>().bounds;
+			Vector3 appBarPosition = bounds.center + new Vector3(0, bounds.extents.y * yOffset, 0);
+			appBar.transform.position = appBarPosition;
+		}
 	}
 }

@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Microsoft.MixedReality.Toolkit.UI;
+using Microsoft.MixedReality.Toolkit.UI.BoundsControl;
+
 
 public class SelectionTest : MonoBehaviour
 {
@@ -12,9 +15,11 @@ public class SelectionTest : MonoBehaviour
     public Material originalMaterial;
     public Material selectedMaterial;
     public GameObject childObject;
+	public GameObject appBarPrefab;
+	private GameObject appBarInstance;
 
 
-    void Start()
+	void Start()
     {
         idle = true;
         selected = false;
@@ -83,7 +88,12 @@ public class SelectionTest : MonoBehaviour
         rotating = false;
 
         childObject.GetComponent<Renderer>().material = originalMaterial;
-    }
+		if (appBarInstance != null)
+		{
+			Destroy(appBarInstance);
+			appBarInstance = null;
+		}
+	}
 
     void Select()
     {
@@ -93,5 +103,14 @@ public class SelectionTest : MonoBehaviour
         rotating = false;
 
         childObject.GetComponent<Renderer>().material = selectedMaterial;
-    }
+        Debug.Log("Select");
+
+		if (appBarInstance == null)
+		{
+			Debug.Log("AppBarInstance is null");
+			Vector3 appBarOffset = new Vector3(-1, -1, 0); // Adjust the Y value as needed
+			appBarInstance = Instantiate(appBarPrefab, transform.position + appBarOffset, Quaternion.identity);
+			appBarInstance.GetComponent<AppBar>().Target = GetComponent<BoundsControl>();
+		}
+	}
 }

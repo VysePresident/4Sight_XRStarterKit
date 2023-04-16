@@ -23,7 +23,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1861168696414987472
 Transform:
   m_ObjectHideFlags: 0
@@ -177,6 +177,8 @@ MonoBehaviour:
   originalMaterial: {fileID: 2100000, guid: 2bb38d58001d8d444803cf25ed380bc8, type: 2}
   selectedMaterial: {fileID: 2100000, guid: 338b88ec0f3c0c84695a2a085b1d2f4e, type: 2}
   childObject: {fileID: 5112230765491165134}
+  appBarPrefab: {fileID: 1810984937856189388, guid: 977502320c7faf24f8d9c5fcdb47778c,
+    type: 3}
 --- !u!114 &5401023866889312060
 MonoBehaviour:
   m_ObjectHideFlags: 0

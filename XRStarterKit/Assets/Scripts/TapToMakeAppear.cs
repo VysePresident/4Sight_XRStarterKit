@@ -48,9 +48,9 @@ public class TapToMakeAppear : MonoBehaviour
 				cubeCreated = true;
 
 				// Instantiate AppBar and set the target to the new object's BoundsControl
-				GameObject newAppBar = Instantiate(appBarPrefab, objectPos, Quaternion.identity);
-				AppBar appBarComponent = newAppBar.GetComponent<AppBar>();
-				appBarComponent.Target = newObject.GetComponent<BoundsControl>();
+				//GameObject newAppBar = Instantiate(appBarPrefab, objectPos, Quaternion.identity);
+				//AppBar appBarComponent = newAppBar.GetComponent<AppBar>();
+				//appBarComponent.Target = newObject.GetComponent<BoundsControl>();
 			}
 
 			if (Input.GetMouseButtonUp(0))
