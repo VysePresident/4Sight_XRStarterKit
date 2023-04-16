@@ -15,11 +15,11 @@ public class SelectionTest : MonoBehaviour
     public Material originalMaterial;
     public Material selectedMaterial;
     public GameObject childObject;
-	public GameObject appBarPrefab;
-	private GameObject appBarInstance;
+    public GameObject appBarPrefab;
+    private GameObject appBarInstance;
 
 
-	void Start()
+    void Start()
     {
         idle = true;
         selected = false;
@@ -88,12 +88,12 @@ public class SelectionTest : MonoBehaviour
         rotating = false;
 
         childObject.GetComponent<Renderer>().material = originalMaterial;
-		if (appBarInstance != null)
-		{
-			Destroy(appBarInstance);
-			appBarInstance = null;
-		}
-	}
+        if (appBarInstance != null)
+        {
+            Destroy(appBarInstance);
+            appBarInstance = null;
+        }
+    }
 
     void Select()
     {
@@ -103,14 +103,61 @@ public class SelectionTest : MonoBehaviour
         rotating = false;
 
         childObject.GetComponent<Renderer>().material = selectedMaterial;
-        Debug.Log("Select");
 
-		if (appBarInstance == null)
+        if (appBarInstance == null)
+        {
+            //Vector3 appBarOffset = new Vector3(-1, -1, 0); // Adjust the Y value as needed
+            //appBarInstance = Instantiate(appBarPrefab, transform.position + appBarOffset, Quaternion.identity);
+            //appBarInstance.GetComponent<AppBar>().Target = GetComponent<BoundsControl>();
+
+            Renderer renderer = GetComponent<Renderer>();
+            Bounds bounds = renderer.bounds;
+            float yOffset = bounds.size.y / 2f + 0.1f; // 0.1f as padding between the AppBar and the prefab
+            Vector3 appBarOffset = new Vector3(0, -yOffset, 0);
+            appBarInstance = Instantiate(appBarPrefab, transform.position + appBarOffset, Quaternion.identity);
+            appBarInstance.GetComponent<AppBar>().Target = GetComponent<BoundsControl>();
+
+			//AppBar appBar = appBarInstance.GetComponent<AppBar>();
+			//appBar.OnButtonPressed.AddListener(OnAppBarButtonPressed);
+		}
+
+    }
+
+	public void OnAppBarButtonPressed(AppBarButton button)
+	{
+		Debug.Log("AppBar Button Pressed: " + button.ButtonType);
+
+		switch (button.ButtonType)
 		{
-			Debug.Log("AppBarInstance is null");
-			Vector3 appBarOffset = new Vector3(-1, -1, 0); // Adjust the Y value as needed
-			appBarInstance = Instantiate(appBarPrefab, transform.position + appBarOffset, Quaternion.identity);
-			appBarInstance.GetComponent<AppBar>().Target = GetComponent<BoundsControl>();
+			case AppBar.ButtonTypeEnum.Remove:
+				RemoveObject();
+				break;
+				// You can add other cases for different AppBar buttons here
 		}
 	}
+
+
+	public void OnAppBarButtonClick(AppBarButton button)
+	{
+		Debug.Log("AppBar Button Clicked: " + button.ButtonType);
+
+		switch (button.ButtonType)
+		{
+			case AppBar.ButtonTypeEnum.Remove:
+				RemoveObject();
+				break;
+				// You can add other cases for different AppBar buttons here
+		}
+	}
+
+	private void RemoveObject()
+	{
+		if (appBarInstance != null)
+		{
+			Destroy(appBarInstance);
+			appBarInstance = null;
+		}
+		Destroy(gameObject);
+	}
+
 }

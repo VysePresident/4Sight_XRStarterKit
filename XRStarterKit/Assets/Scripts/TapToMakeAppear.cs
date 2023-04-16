@@ -31,26 +31,13 @@ public class TapToMakeAppear : MonoBehaviour
     {
         if (mode == editMode.Add)
         {
-			//if (Input.GetMouseButtonDown(0) && !cubeCreated)
-			//{
-			//    Vector3 mousePos = Input.mousePosition;
-			//    mousePos.z = 3; // set the distance from the camera
-			//    Vector3 objectPos = Camera.main.ScreenToWorldPoint(mousePos);
-			//    GameObject newObject = Instantiate(cubePrefab, objectPos, Quaternion.identity);
-			//    cubeCreated = true;
-			//}
 			if (Input.GetMouseButtonDown(0) && !cubeCreated)
 			{
-				Vector3 mousePos = Input.mousePosition;
-				mousePos.z = 3; // set the distance from the camera
-				Vector3 objectPos = Camera.main.ScreenToWorldPoint(mousePos);
-				GameObject newObject = Instantiate(cubePrefab, objectPos, Quaternion.identity);
-				cubeCreated = true;
-
-				// Instantiate AppBar and set the target to the new object's BoundsControl
-				//GameObject newAppBar = Instantiate(appBarPrefab, objectPos, Quaternion.identity);
-				//AppBar appBarComponent = newAppBar.GetComponent<AppBar>();
-				//appBarComponent.Target = newObject.GetComponent<BoundsControl>();
+			    Vector3 mousePos = Input.mousePosition;
+			    mousePos.z = 3; // set the distance from the camera
+			    Vector3 objectPos = Camera.main.ScreenToWorldPoint(mousePos);
+			    GameObject newObject = Instantiate(cubePrefab, objectPos, Quaternion.identity);
+			    cubeCreated = true;
 			}
 
 			if (Input.GetMouseButtonUp(0))

@@ -46,7 +46,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1816521731101722032}
   - component: {fileID: 1779011808000198184}
-  - component: {fileID: 1811961541971757681}
   m_Layer: 0
   m_Name: AppBar
   m_TagString: Untagged
@@ -102,22 +101,6 @@ MonoBehaviour:
   hoverOffsetZ: 0.05
   buttonWidth: 0.032
   buttonDepth: 0.016
---- !u!114 &1811961541971757681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1810984937856189388}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1aacd2429355fc488c8db758e6cfbca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  appBar: {fileID: 1779011808000198184}
-  targetObject: {fileID: 1861168696414987438, guid: 013a5da7d2b6b5e429223582c465f137,
-    type: 3}
-  yOffset: -0.5
 --- !u!1 &3754736345376728319
 GameObject:
   m_ObjectHideFlags: 0
