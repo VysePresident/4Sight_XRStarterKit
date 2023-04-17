@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SelectionTest : MonoBehaviour
 {
-    public bool idle;           // The object is not selected
-    public bool selected;       // The object is selected
+    public bool idle = true;           // The object is not selected
+    public bool selected = false;       // The object is selected
 
     public Material originalMaterial;
     public Material selectedMaterial;
@@ -14,8 +14,7 @@ public class SelectionTest : MonoBehaviour
 
     void Start()
     {
-        idle = true;
-        selected = false;
+        
     }
 
     void Update()
