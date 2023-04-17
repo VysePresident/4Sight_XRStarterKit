@@ -19,11 +19,6 @@ public class TapToMakeAppear : MonoBehaviour
 
     public editMode mode;
 
-    void spawnObject()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
