@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 1861168696414987436}
   - component: {fileID: 1861168696414987437}
   - component: {fileID: 5134518511801270118}
+  - component: {fileID: 1427137914}
+  - component: {fileID: 1427137915}
   m_Layer: 0
   m_Name: TTP Cube
   m_TagString: Untagged
@@ -170,13 +172,56 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   idle: 1
   selected: 0
-  moving: 0
-  rotating: 0
-  locked: 0
   originalMaterial: {fileID: 2100000, guid: 2bb38d58001d8d444803cf25ed380bc8, type: 2}
   selectedMaterial: {fileID: 2100000, guid: 338b88ec0f3c0c84695a2a085b1d2f4e, type: 2}
   cantSelectMaterial: {fileID: 2100000, guid: 684f4872f6624da4c90c243edd439f76, type: 2}
   childObject: {fileID: 5112230765491165134}
+  realtimeView: {fileID: 1427137915}
+  realtimeTransform: {fileID: 1427137914}
+  RT: 
+--- !u!114 &1427137914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861168696414987438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1029778088, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolate: 1
+  _syncPosition: 1
+  _syncRotation: 1
+  _syncScale: 1
+  _syncVelocity: 1
+  _maintainOwnershipWhileSleeping: 0
+--- !u!114 &1427137915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861168696414987438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -363599832, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _realtime: {fileID: 0}
+  _sceneViewUUID: 
+  _viewUUID: 
+  _sceneViewPreventOwnershipTakeover: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
+  _sceneViewDestroyWhenLastClientLeaves: 1
+  _components:
+  - componentID: 1
+    component: {fileID: 1427137914}
+  - componentID: 2
+    component: {fileID: 0}
+  _childViews: []
 --- !u!1 &5112230765491165134
 GameObject:
   m_ObjectHideFlags: 0

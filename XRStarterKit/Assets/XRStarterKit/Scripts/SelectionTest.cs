@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Normal.Realtime;
 
 public class SelectionTest : MonoBehaviour
 {
@@ -14,10 +15,15 @@ public class SelectionTest : MonoBehaviour
     public Material cantSelectMaterial;
     public GameObject childObject;
 
+    public RealtimeView realtimeView;
+    public RealtimeTransform realtimeTransform;
+
+    public string RT;
+
 
     void Start()
     {
-        
+        RT = realtimeTransform.ownerID.ToString();
     }
 
     void Update()
@@ -79,6 +85,11 @@ public class SelectionTest : MonoBehaviour
         selected = false;
 
         childObject.GetComponent<Renderer>().material = originalMaterial;
+
+        realtimeView.ClearOwnership();
+        realtimeView.preventOwnershipTakeover = false;
+        realtimeTransform.ClearOwnership();
+        RT = realtimeTransform.ownerID.ToString();
     }
 
     void Select()
@@ -87,5 +98,10 @@ public class SelectionTest : MonoBehaviour
         selected = true;
 
         childObject.GetComponent<Renderer>().material = selectedMaterial;
+
+        realtimeView.RequestOwnership();
+        realtimeView.preventOwnershipTakeover = true;
+        realtimeTransform.RequestOwnership();
+        RT = realtimeTransform.ownerID.ToString();
     }
 }
