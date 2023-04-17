@@ -15,6 +15,10 @@ GameObject:
   - component: {fileID: 8227114488615414955}
   - component: {fileID: 3747198953148811468}
   - component: {fileID: 194738913345663010}
+  - component: {fileID: -51919368538088168}
+  - component: {fileID: 9214916387824273426}
+  - component: {fileID: 52214859450285443}
+  - component: {fileID: -6273162765347179375}
   m_Layer: 0
   m_Name: RoundTable
   m_TagString: Untagged
@@ -145,3 +149,91 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!65 &-51919368538088168
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7690519952026649423}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9578247, y: 0.82270813, z: 1.9435425}
+  m_Center: {x: 0, y: 0.41417694, z: 0}
+--- !u!114 &9214916387824273426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7690519952026649423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b55691ad5b034fe6966763a6e23818d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trackedTargetType: 0
+  trackedHandedness: 3
+  trackedHandJoint: 2
+  transformOverride: {fileID: 0}
+  additionalOffset: {x: 0, y: 0, z: 0}
+  additionalRotation: {x: 0, y: 0, z: 0}
+  updateSolvers: 1
+--- !u!114 &52214859450285443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7690519952026649423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1e1c3953429c5e4fb804cd997540db9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateLinkedTransform: 0
+  moveLerpTime: 0.1
+  rotateLerpTime: 0.1
+  scaleLerpTime: 0
+  maintainScaleOnInitialization: 1
+  smoothing: 1
+  lifetime: 0
+  autoStart: 0
+  defaultPlacementDistance: 1.5
+  maxRaycastDistance: 20
+  surfaceNormalOffset: 0
+  useDefaultSurfaceNormalOffset: 1
+  keepOrientationVertical: 0
+  rotateAccordingToSurface: 0
+  magneticSurfaces:
+  - serializedVersion: 2
+    m_Bits: 4294967291
+  debugEnabled: 1
+  onPlacingStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onPlacingStopped:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-6273162765347179375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7690519952026649423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6989015e8e325c545a541addbd062437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idle: 0
+  selected: 0
+  moving: 0
+  rotating: 0
+  originalMaterial: {fileID: 2100000, guid: 2bb38d58001d8d444803cf25ed380bc8, type: 2}
+  selectedMaterial: {fileID: 2100000, guid: 338b88ec0f3c0c84695a2a085b1d2f4e, type: 2}
+  childObject: {fileID: 0}
+  appBarPrefab: {fileID: 0}

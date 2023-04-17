@@ -26,6 +26,11 @@ public class TapToMakeAppear : MonoBehaviour
         
     }
 
+    private void Start()
+    {
+        cubePrefab = FurnitureController.FurnitureToPlace;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -38,7 +43,9 @@ public class TapToMakeAppear : MonoBehaviour
 			    Vector3 objectPos = Camera.main.ScreenToWorldPoint(mousePos);
 			    GameObject newObject = Instantiate(cubePrefab, objectPos, Quaternion.identity);
 			    cubeCreated = true;
-			}
+                mode = editMode.Move;
+
+            }
 
 			if (Input.GetMouseButtonUp(0))
             {
