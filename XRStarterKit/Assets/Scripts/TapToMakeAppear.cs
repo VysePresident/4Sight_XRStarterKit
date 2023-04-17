@@ -21,11 +21,6 @@ public class TapToMakeAppear : MonoBehaviour
 
     public editMode mode;
 
-    void spawnObject()
-    {
-        
-    }
-
     private void Start()
     {
         cubePrefab = FurnitureController.FurnitureToPlace;

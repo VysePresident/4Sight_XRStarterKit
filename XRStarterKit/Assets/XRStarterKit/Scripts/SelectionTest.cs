@@ -3,28 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using Microsoft.MixedReality.Toolkit.UI;
 using Microsoft.MixedReality.Toolkit.UI.BoundsControl;
-
+using Normal.Realtime;
 
 public class SelectionTest : MonoBehaviour
 {
-    public bool idle;           // The object is not selected
-    public bool selected;       // The object is selected
-    public bool moving;           // The object is being moved
-    public bool rotating;         // The object is being rotated
+    public bool idle = true;            // The object is not selected
+    public bool selected = false;       // The object is selected
 
     public Material originalMaterial;
     public Material selectedMaterial;
+    public Material cantSelectMaterial;
     public GameObject childObject;
     public GameObject appBarPrefab;
     private GameObject appBarInstance;
 
+    public RealtimeView realtimeView;
+    public RealtimeTransform realtimeTransform;
+
+    public string RT;
 
     void Start()
     {
-        idle = true;
-        selected = false;
-        moving = false;
-        rotating = false;
+        
     }
 
 	private void UpdateAppBar()
@@ -111,26 +111,32 @@ public class SelectionTest : MonoBehaviour
 	{
 		idle = true;
 		selected = false;
-		moving = false;
-		rotating = false;
 
 		childObject.GetComponent<Renderer>().material = originalMaterial;
 		if (appBarInstance != null)
 		{
 			Destroy(appBarInstance);
 			appBarInstance = null;
-		}
-	}
+        }
+
+        realtimeView.ClearOwnership();
+        realtimeView.preventOwnershipTakeover = false;
+        realtimeTransform.ClearOwnership();
+        RT = realtimeTransform.ownerID.ToString();
+    }
 
 
 	void Select()
 	{
 		idle = false;
 		selected = true;
-		moving = false;
-		rotating = false;
 
 		childObject.GetComponent<Renderer>().material = selectedMaterial;
-	}
+
+        realtimeView.RequestOwnership();
+        realtimeView.preventOwnershipTakeover = true;
+        realtimeTransform.RequestOwnership();
+        RT = realtimeTransform.ownerID.ToString();
+    }
 
 }
