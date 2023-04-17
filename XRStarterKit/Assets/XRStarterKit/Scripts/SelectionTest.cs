@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using Microsoft.MixedReality.Toolkit.UI;
 using Microsoft.MixedReality.Toolkit.UI.BoundsControl;
-
+using Normal.Realtime;
 
 public class SelectionTest : MonoBehaviour
 {
     public bool idle;           // The object is not selected
     public bool selected;       // The object is selected
-    public bool moving;           // The object is being moved
-    public bool rotating;         // The object is being rotated
 
     public Material originalMaterial;
     public Material selectedMaterial;
@@ -23,8 +21,6 @@ public class SelectionTest : MonoBehaviour
     {
         idle = true;
         selected = false;
-        moving = false;
-        rotating = false;
     }
 
 	private void UpdateAppBar()
@@ -111,8 +107,6 @@ public class SelectionTest : MonoBehaviour
 	{
 		idle = true;
 		selected = false;
-		moving = false;
-		rotating = false;
 
 		childObject.GetComponent<Renderer>().material = originalMaterial;
 		if (appBarInstance != null)
@@ -127,8 +121,6 @@ public class SelectionTest : MonoBehaviour
 	{
 		idle = false;
 		selected = true;
-		moving = false;
-		rotating = false;
 
 		childObject.GetComponent<Renderer>().material = selectedMaterial;
 	}
