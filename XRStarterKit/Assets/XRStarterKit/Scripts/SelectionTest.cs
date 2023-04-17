@@ -6,8 +6,6 @@ public class SelectionTest : MonoBehaviour
 {
     public bool idle;           // The object is not selected
     public bool selected;       // The object is selected
-    public bool moving;           // The object is being moved
-    public bool rotating;         // The object is being rotated
 
     public Material originalMaterial;
     public Material selectedMaterial;
@@ -18,8 +16,6 @@ public class SelectionTest : MonoBehaviour
     {
         idle = true;
         selected = false;
-        moving = false;
-        rotating = false;
     }
 
     void Update()
@@ -79,8 +75,6 @@ public class SelectionTest : MonoBehaviour
     {
         idle = true;
         selected = false;
-        moving = false;
-        rotating = false;
 
         childObject.GetComponent<Renderer>().material = originalMaterial;
     }
@@ -89,8 +83,6 @@ public class SelectionTest : MonoBehaviour
     {
         idle = false;
         selected = true;
-        moving = false;
-        rotating = false;
 
         childObject.GetComponent<Renderer>().material = selectedMaterial;
     }
