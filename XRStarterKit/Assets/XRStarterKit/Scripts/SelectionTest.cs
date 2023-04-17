@@ -12,6 +12,7 @@ public class SelectionTest : MonoBehaviour
 
     public Material originalMaterial;
     public Material selectedMaterial;
+    public Material cantSelectMaterial;
     public GameObject childObject;
     public GameObject appBarPrefab;
     private GameObject appBarInstance;
@@ -23,8 +24,7 @@ public class SelectionTest : MonoBehaviour
 
     void Start()
     {
-        idle
-        selected = false;
+        
     }
 
 	private void UpdateAppBar()
@@ -117,8 +117,13 @@ public class SelectionTest : MonoBehaviour
 		{
 			Destroy(appBarInstance);
 			appBarInstance = null;
-		}
-	}
+        }
+
+        realtimeView.ClearOwnership();
+        realtimeView.preventOwnershipTakeover = false;
+        realtimeTransform.ClearOwnership();
+        RT = realtimeTransform.ownerID.ToString();
+    }
 
 
 	void Select()
@@ -127,6 +132,11 @@ public class SelectionTest : MonoBehaviour
 		selected = true;
 
 		childObject.GetComponent<Renderer>().material = selectedMaterial;
-	}
+
+        realtimeView.RequestOwnership();
+        realtimeView.preventOwnershipTakeover = true;
+        realtimeTransform.RequestOwnership();
+        RT = realtimeTransform.ownerID.ToString();
+    }
 
 }
