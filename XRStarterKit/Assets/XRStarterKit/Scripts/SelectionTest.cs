@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class SelectionTest : MonoBehaviour
 {
+    [HideInInspector]
     public bool idle = true;           // The object is not selected
+    [HideInInspector]
     public bool selected = false;       // The object is selected
 
     public Material originalMaterial;
     public Material selectedMaterial;
+    public Material cantSelectMaterial;
     public GameObject childObject;
 
 
