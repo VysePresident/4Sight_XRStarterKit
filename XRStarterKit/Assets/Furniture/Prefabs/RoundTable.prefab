@@ -205,7 +205,7 @@ MonoBehaviour:
   maxRaycastDistance: 20
   surfaceNormalOffset: 0
   useDefaultSurfaceNormalOffset: 1
-  keepOrientationVertical: 0
+  keepOrientationVertical: 1
   rotateAccordingToSurface: 0
   magneticSurfaces:
   - serializedVersion: 2
