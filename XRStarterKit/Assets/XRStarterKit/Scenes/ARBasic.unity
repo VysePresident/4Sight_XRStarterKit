@@ -634,20 +634,20 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 1
   RuntimeCollider: 1
-  mTrackableName: Linrary3_2
+  mTrackableName: Lab
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Linrary3_2.xml
-  AuthoringModelPath: 41490af058d54632bf70552a65440d03_authoring.glb
-  OcclusionModelPath: 41490af058d54632bf70552a65440d03_occlusion.3dt
-  ClipHeight: 3.66007
+  mDataSetPath: Vuforia/Lab.xml
+  AuthoringModelPath: 9ab67c6a1ca54674ba4504619ffe9515_authoring.glb
+  OcclusionModelPath: 9ab67c6a1ca54674ba4504619ffe9515_occlusion.3dt
+  ClipHeight: 2.01175
   mSize: {x: 0, y: 0, z: 0}
   mBoundingBox:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
-  mNavMeshModelPath: 41490af058d54632bf70552a65440d03_navmesh.glb
+  mNavMeshModelPath: 9ab67c6a1ca54674ba4504619ffe9515_navmesh.glb
   mVersion: 5.1
-  mBBoxMin: {x: -18.8343, y: -9.8066, z: -38.5629}
-  mBBoxMax: {x: 33.0151, y: 3.0188, z: 23.2319}
+  mBBoxMin: {x: -8.7183, y: -3.7202, z: -8.0937}
+  mBBoxMax: {x: 8.2514, y: 1.7388, z: 8.8111}
   mModelMesh: {fileID: 0}
   mRequiresExternalPositions: 0
   mPreview: {fileID: 844946318}
@@ -737,8 +737,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 844946313}
   mHiddenRoot: {fileID: 0}
-  mTargetName: Linrary3_2
-  mDatasetName: Vuforia/Linrary3_2.xml
+  mTargetName: Lab
+  mDatasetName: Vuforia/Lab.xml
   mCastedBehaviour: {fileID: 844946313}
   mType: 1
 --- !u!1 &1052600749
@@ -1049,7 +1049,7 @@ PrefabInstance:
     - target: {fileID: 1861168696414987472, guid: 013a5da7d2b6b5e429223582c465f137,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.19
+      value: -2.75
       objectReference: {fileID: 0}
     - target: {fileID: 1861168696414987472, guid: 013a5da7d2b6b5e429223582c465f137,
         type: 3}
@@ -1059,7 +1059,7 @@ PrefabInstance:
     - target: {fileID: 1861168696414987472, guid: 013a5da7d2b6b5e429223582c465f137,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.57
+      value: -1.393
       objectReference: {fileID: 0}
     - target: {fileID: 1861168696414987472, guid: 013a5da7d2b6b5e429223582c465f137,
         type: 3}
@@ -1119,7 +1119,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1584456171
 MonoBehaviour:
   m_ObjectHideFlags: 0
