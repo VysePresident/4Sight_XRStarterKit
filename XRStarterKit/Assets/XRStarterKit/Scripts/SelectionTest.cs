@@ -64,7 +64,7 @@ public class SelectionTest : MonoBehaviour
         }
         if (selected)
         {
-            if (Input.GetMouseButtonDown(0) && !IsMouseOver())
+            if (Input.GetMouseButtonDown(0) && !IsMouseOver() && realtimeTransform.isOwnedRemotely)
             {
                 Deselect();
             }
@@ -87,7 +87,7 @@ public class SelectionTest : MonoBehaviour
     {
         if (selected)
         {
-            if (Input.GetMouseButtonDown(0) && IsMouseOver())
+            if (Input.GetMouseButtonDown(0) && IsMouseOver() && realtimeTransform.isOwnedRemotely)
             {
                 Deselect();
             }
