@@ -938,26 +938,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 4018428365123286583}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1427137913 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1861168696414987438, guid: 013a5da7d2b6b5e429223582c465f137,
-    type: 3}
-  m_PrefabInstance: {fileID: 1503265458}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1427137916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1427137913}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a98de877dee5fc341b4eb59dfdab266c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoConstraintSelection: 1
-  selectedConstraints: []
 --- !u!1 &1482300893
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,40 +1028,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1861168696414987437, guid: 013a5da7d2b6b5e429223582c465f137,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1861168696414987437, guid: 013a5da7d2b6b5e429223582c465f137,
-        type: 3}
-      propertyPath: onPlacingStarted.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1861168696414987437, guid: 013a5da7d2b6b5e429223582c465f137,
-        type: 3}
-      propertyPath: onPlacingStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1861168696414987437, guid: 013a5da7d2b6b5e429223582c465f137,
-        type: 3}
-      propertyPath: onPlacingStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+    - target: {fileID: 1427137918, guid: 013a5da7d2b6b5e429223582c465f137, type: 3}
+      propertyPath: _realtime
       value: 
-      objectReference: {fileID: 1427137913}
-    - target: {fileID: 1861168696414987437, guid: 013a5da7d2b6b5e429223582c465f137,
-        type: 3}
-      propertyPath: onPlacingStarted.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
+      objectReference: {fileID: 1482300894}
+    - target: {fileID: 1427137918, guid: 013a5da7d2b6b5e429223582c465f137, type: 3}
+      propertyPath: _viewUUID
+      value: 4b768a72-7e78-4293-aba0-363af8a5f602
       objectReference: {fileID: 0}
     - target: {fileID: 1861168696414987438, guid: 013a5da7d2b6b5e429223582c465f137,
         type: 3}
       propertyPath: m_Name
       value: TTP Cube
-      objectReference: {fileID: 0}
-    - target: {fileID: 1861168696414987438, guid: 013a5da7d2b6b5e429223582c465f137,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1861168696414987472, guid: 013a5da7d2b6b5e429223582c465f137,
         type: 3}
