@@ -66,6 +66,10 @@ public class SelectionTest : MonoBehaviour
             {
                 childObject.GetComponent<Renderer>().material = cantSelectMaterial;
             }
+            else
+            {
+                childObject.GetComponent<Renderer>().material = originalMaterial;
+            }
         }
         if (selected)
         {
