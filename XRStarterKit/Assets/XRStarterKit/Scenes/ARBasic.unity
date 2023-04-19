@@ -634,20 +634,20 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 1
   RuntimeCollider: 1
-  mTrackableName: Lab
+  mTrackableName: PGH
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Lab.xml
-  AuthoringModelPath: 9ab67c6a1ca54674ba4504619ffe9515_authoring.glb
-  OcclusionModelPath: 9ab67c6a1ca54674ba4504619ffe9515_occlusion.3dt
-  ClipHeight: 2.01175
+  mDataSetPath: Vuforia/PGH.xml
+  AuthoringModelPath: 67b6ff147aa4431bb468a00bf115ca10_authoring.glb
+  OcclusionModelPath: 67b6ff147aa4431bb468a00bf115ca10_occlusion.3dt
+  ClipHeight: 3.05031
   mSize: {x: 0, y: 0, z: 0}
   mBoundingBox:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
-  mNavMeshModelPath: 9ab67c6a1ca54674ba4504619ffe9515_navmesh.glb
+  mNavMeshModelPath: 67b6ff147aa4431bb468a00bf115ca10_navmesh.glb
   mVersion: 5.1
-  mBBoxMin: {x: -8.7183, y: -3.7202, z: -8.0937}
-  mBBoxMax: {x: 8.2514, y: 1.7388, z: 8.8111}
+  mBBoxMin: {x: -11.0176, y: -3.0756, z: -24.9761}
+  mBBoxMax: {x: 2.4934, y: 2.7586, z: 4.6304}
   mModelMesh: {fileID: 0}
   mRequiresExternalPositions: 0
   mPreview: {fileID: 844946318}
@@ -737,8 +737,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 844946313}
   mHiddenRoot: {fileID: 0}
-  mTargetName: Lab
-  mDatasetName: Vuforia/Lab.xml
+  mTargetName: PGH
+  mDatasetName: Vuforia/PGH.xml
   mCastedBehaviour: {fileID: 844946313}
   mType: 1
 --- !u!1 &1052600749
