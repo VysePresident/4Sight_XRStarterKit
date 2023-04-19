@@ -66,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 53aa0875d11cc604a93539387bccc820, type: 2}
+  - {fileID: 2100000, guid: 543b73a4ce5bf66408a57b3d0a721959, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -184,9 +184,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   idle: 0
   selected: 0
-  moving: 0
-  rotating: 0
   originalMaterial: {fileID: 2100000, guid: 2bb38d58001d8d444803cf25ed380bc8, type: 2}
   selectedMaterial: {fileID: 2100000, guid: 338b88ec0f3c0c84695a2a085b1d2f4e, type: 2}
+  cantSelectMaterial: {fileID: 0}
   childObject: {fileID: 0}
-  appBarPrefab: {fileID: 0}
+  realtimeView: {fileID: 0}
+  realtimeTransform: {fileID: 0}
+  RT: 
