@@ -14,8 +14,8 @@ public class SelectionTest : MonoBehaviour
     public Material selectedMaterial;
     public Material cantSelectMaterial;
     public GameObject childObject;
-    public GameObject appBarPrefab;
-    private GameObject appBarInstance;
+    //public GameObject appBarPrefab;       // These turned out not to be particularly functional and should be replaced with a static menu
+    //private GameObject appBarInstance;
 
     public RealtimeView realtimeView;
     public RealtimeTransform realtimeTransform;
@@ -27,7 +27,7 @@ public class SelectionTest : MonoBehaviour
         
     }
 
-	private void UpdateAppBar()
+	/*private void UpdateAppBar()
 	{
 		if (selected)
 		{
@@ -51,7 +51,7 @@ public class SelectionTest : MonoBehaviour
 				appBarInstance = null;
 			}
 		}
-	}
+	}*/
 
 	void Update()
     {
@@ -61,6 +61,11 @@ public class SelectionTest : MonoBehaviour
             {
                 Select();
             }
+            
+            if (realtimeTransform.isOwnedRemotely)
+            {
+                childObject.GetComponent<Renderer>().material = cantSelectMaterial;
+            }
         }
         if (selected)
         {
@@ -69,7 +74,7 @@ public class SelectionTest : MonoBehaviour
                 Deselect();
             }
         }
-		UpdateAppBar();
+		//UpdateAppBar();
 	}
 
     void OnMouseOver()
@@ -113,11 +118,11 @@ public class SelectionTest : MonoBehaviour
 		selected = false;
 
 		childObject.GetComponent<Renderer>().material = originalMaterial;
-		if (appBarInstance != null)
+		/*if (appBarInstance != null)
 		{
 			Destroy(appBarInstance);
 			appBarInstance = null;
-        }
+        }*/
 
         realtimeView.ClearOwnership();
         realtimeView.preventOwnershipTakeover = false;
