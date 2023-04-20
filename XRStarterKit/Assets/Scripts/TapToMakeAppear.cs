@@ -27,9 +27,7 @@ public class TapToMakeAppear : MonoBehaviour
     {
         cubePrefab = FurnitureController.FurnitureToPlace;
         prefabName = cubePrefab.name;
-
-        InstantiateOptions options = new InstantiateOptions();
-        options.persistFlags = Realtime.InstantiatePersistFlags.DontDestroyOnLoad;
+        
     }
 
     // Update is called once per frame
@@ -43,7 +41,7 @@ public class TapToMakeAppear : MonoBehaviour
                 mousePos.z = 3; // set the distance from the camera
                 Vector3 objectPos = Camera.main.ScreenToWorldPoint(mousePos);
                 // Using Realtime.Instantiate
-                GameObject newObject = Realtime.Instantiate(cubePrefab.name, objectPos, Quaternion.identity, options);
+                GameObject newObject = Realtime.Instantiate(cubePrefab.name, objectPos, Quaternion.identity, destroyWhenOwnerOrLastClientLeaves: false);
                 cubeCreated = true;
                 mode = editMode.Move;
             }
