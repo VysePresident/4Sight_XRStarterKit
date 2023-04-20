@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using Microsoft.MixedReality.Toolkit.UI;
 using Microsoft.MixedReality.Toolkit.UI.BoundsControl;
+using Normal.Realtime;
 
 public class TapToMakeAppear : MonoBehaviour
 {
     bool cubeCreated = false;
     public GameObject cubePrefab;
+    public string prefabName;
 	private GameObject cube = new GameObject();
     public static bool readyToPlace = false;
     
@@ -24,6 +26,7 @@ public class TapToMakeAppear : MonoBehaviour
     private void Awake()
     {
         cubePrefab = FurnitureController.FurnitureToPlace;
+        prefabName = cubePrefab.name;
     }
 
     // Update is called once per frame
@@ -36,7 +39,8 @@ public class TapToMakeAppear : MonoBehaviour
                 Vector3 mousePos = Input.mousePosition;
                 mousePos.z = 3; // set the distance from the camera
                 Vector3 objectPos = Camera.main.ScreenToWorldPoint(mousePos);
-                GameObject newObject = Instantiate(cubePrefab, objectPos, Quaternion.identity);
+                // Using Realtime.Instantiate
+                GameObject newObject = Realtime.Instantiate(cubePrefab.name, objectPos, Quaternion.identity, InstantiateOptions.DontDestroyOnLoad);
                 cubeCreated = true;
                 mode = editMode.Move;
             }
