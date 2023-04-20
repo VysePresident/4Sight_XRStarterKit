@@ -14,44 +14,25 @@ public class SelectionTest : MonoBehaviour
     public Material selectedMaterial;
     public Material cantSelectMaterial;
     public GameObject childObject;
-    //public GameObject appBarPrefab;       // These turned out not to be particularly functional and should be replaced with a static menu
-    //private GameObject appBarInstance;
+
 
     public RealtimeView realtimeView;
     public RealtimeTransform realtimeTransform;
 
-    public string RT;
+	public GameObject submenuPrefab;
+	private GameObject submenuInstance;
+
+	public string RT;
 
     void Start()
     {
-        
-    }
-
-	/*private void UpdateAppBar()
-	{
-		if (selected)
+		if (submenuInstance != null)
 		{
-			if (appBarInstance == null)
-			{
-				appBarInstance = Instantiate(appBarPrefab, Vector3.zero, Quaternion.identity);
-				appBarInstance.GetComponent<AppBar>().Target = GetComponent<BoundsControl>();
-				appBarInstance.transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
-			}
-
-			Camera cam = Camera.main;
-			Vector3 screenPos = new Vector3(Screen.width / 2, 0, cam.nearClipPlane + 0.1f);
-			Vector3 worldPos = cam.ScreenToWorldPoint(screenPos);
-			appBarInstance.transform.position = worldPos;
+            Debug.Log("submenu is not null, destroy");
+			Destroy(submenuInstance);
 		}
-		else
-		{
-			if (appBarInstance != null)
-			{
-				Destroy(appBarInstance);
-				appBarInstance = null;
-			}
-		}
-	}*/
+		submenuInstance = null;
+	}
 
 	void Update()
     {
@@ -78,7 +59,6 @@ public class SelectionTest : MonoBehaviour
                 Deselect();
             }
         }
-		//UpdateAppBar();
 	}
 
     void OnMouseOver()
@@ -122,17 +102,20 @@ public class SelectionTest : MonoBehaviour
 		selected = false;
 
 		childObject.GetComponent<Renderer>().material = originalMaterial;
-		/*if (appBarInstance != null)
-		{
-			Destroy(appBarInstance);
-			appBarInstance = null;
-        }*/
+
 
         realtimeView.ClearOwnership();
         realtimeView.preventOwnershipTakeover = false;
         realtimeTransform.ClearOwnership();
         RT = realtimeTransform.ownerID.ToString();
-    }
+
+		if (submenuInstance != null)
+		{
+			Destroy(submenuInstance);
+			submenuInstance = null;
+		}
+
+	}
 
 
 	void Select()
@@ -146,6 +129,12 @@ public class SelectionTest : MonoBehaviour
         realtimeView.preventOwnershipTakeover = true;
         realtimeTransform.RequestOwnership();
         RT = realtimeTransform.ownerID.ToString();
-    }
+
+		if (submenuInstance == null)
+		{
+			submenuInstance = Instantiate(submenuPrefab);
+			//submenuInstance.transform.SetParent(childObject.transform);
+		}
+	}
 
 }
