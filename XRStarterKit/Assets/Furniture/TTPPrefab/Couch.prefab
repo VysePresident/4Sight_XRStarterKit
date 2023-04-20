@@ -248,7 +248,7 @@ MonoBehaviour:
   surfaceNormalOffset: 0
   useDefaultSurfaceNormalOffset: 1
   keepOrientationVertical: 1
-  rotateAccordingToSurface: 1
+  rotateAccordingToSurface: 0
   magneticSurfaces:
   - serializedVersion: 2
     m_Bits: 4294967291
