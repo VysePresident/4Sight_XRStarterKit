@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<QCARInfo>
+    <TargetSet version="3.4">
+        <AreaTarget version="5.1" bbox="-1.3930 -3.9943 -4.2360 15.1643 2.4109 7.4048" targetId="53a913da75d74b70bc3e091b0a13d95c" name="ScienceBuilding2F_2" pathAuthoring="53a913da75d74b70bc3e091b0a13d95c_authoring.glb" pathOcclusion="53a913da75d74b70bc3e091b0a13d95c_occlusion.3dt" pathNavMesh="53a913da75d74b70bc3e091b0a13d95c_navmesh.glb" cloudTarget="false" />
+    </TargetSet>
+</QCARInfo>

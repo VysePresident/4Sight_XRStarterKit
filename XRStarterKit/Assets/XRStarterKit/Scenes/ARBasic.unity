@@ -646,20 +646,20 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 1
   RuntimeCollider: 1
-  mTrackableName: Linrary3_2
+  mTrackableName: ScienceBuilding2F_2
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Linrary3_2.xml
-  AuthoringModelPath: 41490af058d54632bf70552a65440d03_authoring.glb
-  OcclusionModelPath: 41490af058d54632bf70552a65440d03_occlusion.3dt
-  ClipHeight: 3.66007
+  mDataSetPath: Vuforia/ScienceBuilding2F_2.xml
+  AuthoringModelPath: 53a913da75d74b70bc3e091b0a13d95c_authoring.glb
+  OcclusionModelPath: 53a913da75d74b70bc3e091b0a13d95c_occlusion.3dt
+  ClipHeight: 2.7311602
   mSize: {x: 0, y: 0, z: 0}
   mBoundingBox:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
-  mNavMeshModelPath: 41490af058d54632bf70552a65440d03_navmesh.glb
+  mNavMeshModelPath: 53a913da75d74b70bc3e091b0a13d95c_navmesh.glb
   mVersion: 5.1
-  mBBoxMin: {x: -18.8343, y: -9.8066, z: -38.5629}
-  mBBoxMax: {x: 33.0151, y: 3.0188, z: 23.2319}
+  mBBoxMin: {x: -1.393, y: -3.9943, z: -4.236}
+  mBBoxMax: {x: 15.1643, y: 2.4109, z: 7.4048}
   mModelMesh: {fileID: 0}
   mRequiresExternalPositions: 0
   mPreview: {fileID: 844946318}
@@ -749,8 +749,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 844946313}
   mHiddenRoot: {fileID: 0}
-  mTargetName: Linrary3_2
-  mDatasetName: Vuforia/Linrary3_2.xml
+  mTargetName: ScienceBuilding2F_2
+  mDatasetName: Vuforia/ScienceBuilding2F_2.xml
   mCastedBehaviour: {fileID: 844946313}
   mType: 1
 --- !u!1001 &880818735

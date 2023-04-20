@@ -133,8 +133,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6659997924128407300}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 7}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3135713031991313061}
@@ -279,6 +279,7 @@ MonoBehaviour:
   childObject: {fileID: 237398893859163236}
   realtimeView: {fileID: 5024086178483617492}
   realtimeTransform: {fileID: 5024086178483617495}
+  submenuPrefab: {fileID: 0}
   RT: 
 --- !u!114 &1102653300542491798
 MonoBehaviour:
