@@ -646,20 +646,20 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 1
   RuntimeCollider: 1
-  mTrackableName: PGH
+  mTrackableName: ScienceBuilding2F_2
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/PGH.xml
-  AuthoringModelPath: 67b6ff147aa4431bb468a00bf115ca10_authoring.glb
-  OcclusionModelPath: 67b6ff147aa4431bb468a00bf115ca10_occlusion.3dt
-  ClipHeight: 3.05031
+  mDataSetPath: Vuforia/ScienceBuilding2F_2.xml
+  AuthoringModelPath: 53a913da75d74b70bc3e091b0a13d95c_authoring.glb
+  OcclusionModelPath: 53a913da75d74b70bc3e091b0a13d95c_occlusion.3dt
+  ClipHeight: 2.7311602
   mSize: {x: 0, y: 0, z: 0}
   mBoundingBox:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
-  mNavMeshModelPath: 67b6ff147aa4431bb468a00bf115ca10_navmesh.glb
+  mNavMeshModelPath: 53a913da75d74b70bc3e091b0a13d95c_navmesh.glb
   mVersion: 5.1
-  mBBoxMin: {x: -11.0176, y: -3.0756, z: -24.9761}
-  mBBoxMax: {x: 2.4934, y: 2.7586, z: 4.6304}
+  mBBoxMin: {x: -1.393, y: -3.9943, z: -4.236}
+  mBBoxMax: {x: 15.1643, y: 2.4109, z: 7.4048}
   mModelMesh: {fileID: 0}
   mRequiresExternalPositions: 0
   mPreview: {fileID: 844946318}
@@ -749,8 +749,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 844946313}
   mHiddenRoot: {fileID: 0}
-  mTargetName: PGH
-  mDatasetName: Vuforia/PGH.xml
+  mTargetName: ScienceBuilding2F_2
+  mDatasetName: Vuforia/ScienceBuilding2F_2.xml
   mCastedBehaviour: {fileID: 844946313}
   mType: 1
 --- !u!1001 &880818735
@@ -1394,6 +1394,52 @@ MonoBehaviour:
   Child: {fileID: 0}
   FurnitureSurfaceManager: {fileID: 1689275089}
   CurrentPlane: {fileID: 0}
+--- !u!1 &1687586605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1687586607}
+  - component: {fileID: 1687586606}
+  m_Layer: 0
+  m_Name: Placement Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1687586606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687586605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4e4450c66ae61d489b6a8426a6c6fff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubePrefab: {fileID: 0}
+  mode: 0
+--- !u!4 &1687586607
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687586605}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.5134912, y: 1.2424173, z: 7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1689275088
 GameObject:
   m_ObjectHideFlags: 0

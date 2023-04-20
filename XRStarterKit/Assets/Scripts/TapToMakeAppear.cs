@@ -8,8 +8,8 @@ public class TapToMakeAppear : MonoBehaviour
 {
     bool cubeCreated = false;
     public GameObject cubePrefab;
-	public GameObject appBarPrefab;
 	private GameObject cube = new GameObject();
+    public static bool readyToPlace = false;
     
     // Give basic edit modes
     public enum editMode
@@ -21,7 +21,7 @@ public class TapToMakeAppear : MonoBehaviour
 
     public editMode mode;
 
-    private void Start()
+    private void Awake()
     {
         cubePrefab = FurnitureController.FurnitureToPlace;
     }
@@ -33,13 +33,12 @@ public class TapToMakeAppear : MonoBehaviour
         {
 			if (Input.GetMouseButtonDown(0) && !cubeCreated)
 			{
-			    Vector3 mousePos = Input.mousePosition;
-			    mousePos.z = 3; // set the distance from the camera
-			    Vector3 objectPos = Camera.main.ScreenToWorldPoint(mousePos);
-			    GameObject newObject = Instantiate(cubePrefab, objectPos, Quaternion.identity);
-			    cubeCreated = true;
+                Vector3 mousePos = Input.mousePosition;
+                mousePos.z = 3; // set the distance from the camera
+                Vector3 objectPos = Camera.main.ScreenToWorldPoint(mousePos);
+                GameObject newObject = Instantiate(cubePrefab, objectPos, Quaternion.identity);
+                cubeCreated = true;
                 mode = editMode.Move;
-
             }
 
 			if (Input.GetMouseButtonUp(0))

@@ -36,9 +36,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1644279594747021828}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.513491, y: 0.11000001, z: 7}
-  m_LocalScale: {x: 1, y: 1, z: -1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.65, y: 0.65, z: -0.65}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7005627553611593637}
   m_Father: {fileID: 0}
@@ -151,7 +151,7 @@ MonoBehaviour:
   surfaceNormalOffset: 0
   useDefaultSurfaceNormalOffset: 1
   keepOrientationVertical: 1
-  rotateAccordingToSurface: 1
+  rotateAccordingToSurface: 0
   magneticSurfaces:
   - serializedVersion: 2
     m_Bits: 4294967291
@@ -182,6 +182,7 @@ MonoBehaviour:
   childObject: {fileID: 5329973111919556964}
   realtimeView: {fileID: 1082434587518684116}
   realtimeTransform: {fileID: 1082434587518684119}
+  submenuPrefab: {fileID: 0}
   RT: 
 --- !u!114 &5040053630081546646
 MonoBehaviour:
