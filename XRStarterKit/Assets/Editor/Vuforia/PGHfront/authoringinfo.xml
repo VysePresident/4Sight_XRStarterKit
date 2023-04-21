@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<QCARInfo>
+    <TargetSet version="3.4">
+        <AreaTarget version="5.1" bbox="-10.3031 -7.8945 -14.5549 13.4654 1.7031 13.0855" targetId="4662936e9f9a45aea71f434ee8ae5a1b" name="PGHfront" pathAuthoring="4662936e9f9a45aea71f434ee8ae5a1b_authoring.glb" pathOcclusion="4662936e9f9a45aea71f434ee8ae5a1b_occlusion.3dt" pathNavMesh="4662936e9f9a45aea71f434ee8ae5a1b_navmesh.glb" cloudTarget="false" />
+    </TargetSet>
+</QCARInfo>
