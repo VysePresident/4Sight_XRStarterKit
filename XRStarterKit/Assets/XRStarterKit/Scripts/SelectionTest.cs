@@ -26,12 +26,12 @@ public class SelectionTest : MonoBehaviour
 
     void Start()
     {
-		if (submenuInstance != null)
-		{
-            Debug.Log("submenu is not null, destroy");
-			Destroy(submenuInstance);
-		}
-		submenuInstance = null;
+		//if (submenuInstance != null)
+		//{
+  //          Debug.Log("submenu is not null, destroy");
+		//	Destroy(submenuInstance);
+		//}
+		//submenuInstance = null;
 	}
 
 	void Update()
@@ -109,11 +109,12 @@ public class SelectionTest : MonoBehaviour
         realtimeTransform.ClearOwnership();
         RT = realtimeTransform.ownerID.ToString();
 
-		if (submenuInstance != null)
-		{
-			Destroy(submenuInstance);
-			submenuInstance = null;
-		}
+		//if (submenuInstance != null)
+		//{
+		//	Destroy(submenuInstance);
+		//	submenuInstance = null;
+		//	submenuInstance = null;
+		//}
 
 	}
 
@@ -130,11 +131,20 @@ public class SelectionTest : MonoBehaviour
         realtimeTransform.RequestOwnership();
         RT = realtimeTransform.ownerID.ToString();
 
+		// In SelectionTest.cs, inside the Select() method
 		if (submenuInstance == null)
 		{
-			submenuInstance = Instantiate(submenuPrefab);
-			//submenuInstance.transform.SetParent(childObject.transform);
+			submenuInstance = Instantiate(submenuPrefab, childObject.transform.position, Quaternion.identity);
+			submenuInstance.transform.SetParent(childObject.transform);
+
+			// Pass the selected furniture's details, the furniture object, and the RealtimeView component to the submenu
+			FurnitureDetails furnitureDetails = GetComponent<FurnitureDetails>();
+			RealtimeView furnitureRealtimeView = GetComponent<RealtimeView>();
+			subMenuController submenuController = submenuInstance.GetComponent<subMenuController>();
+			submenuController.SetFurnitureDetails(furnitureDetails, gameObject);
 		}
+
 	}
 
 }
+   

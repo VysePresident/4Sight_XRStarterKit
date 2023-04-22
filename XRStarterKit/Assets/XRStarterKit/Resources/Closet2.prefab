@@ -279,7 +279,8 @@ MonoBehaviour:
   childObject: {fileID: 561363125557781541}
   realtimeView: {fileID: 4699530409797686933}
   realtimeTransform: {fileID: 4699530409797686934}
-  submenuPrefab: {fileID: 0}
+  submenuPrefab: {fileID: 1995913713131899186, guid: 5ca282de2b3ea364e9aa6df74546683a,
+    type: 3}
   RT: 
 --- !u!114 &850156225414522071
 MonoBehaviour:

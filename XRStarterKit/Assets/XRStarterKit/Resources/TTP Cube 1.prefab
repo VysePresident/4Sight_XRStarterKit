@@ -180,9 +180,10 @@ MonoBehaviour:
   selectedMaterial: {fileID: 2100000, guid: 338b88ec0f3c0c84695a2a085b1d2f4e, type: 2}
   cantSelectMaterial: {fileID: 2100000, guid: e7dd6d000aaa5334f88f4e361a9f1c8b, type: 2}
   childObject: {fileID: 5112230765491165134}
-  appBarPrefab: {fileID: 0}
   realtimeView: {fileID: 1427137918}
   realtimeTransform: {fileID: 1427137917}
+  submenuPrefab: {fileID: 1995913713131899186, guid: 5ca282de2b3ea364e9aa6df74546683a,
+    type: 3}
   RT: 
 --- !u!114 &5401023866889312060
 MonoBehaviour:

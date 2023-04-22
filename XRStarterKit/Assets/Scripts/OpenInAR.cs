@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class OpenInAR : MonoBehaviour
 {
-    public void MoveToScene(int sceneID)
+	public FurnitureDetails furnitureDetails;
+	public void MoveToScene(int sceneID)
     {
-        SceneManager.LoadScene(sceneID);
+		SceneData.Instance.selectedFurniture = furnitureDetails;
+		SceneManager.LoadScene(sceneID);
     }
 }
