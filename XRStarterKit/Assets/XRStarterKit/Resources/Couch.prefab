@@ -118,6 +118,7 @@ GameObject:
   - component: {fileID: 5620162031912518545}
   - component: {fileID: 5620162031912518546}
   - component: {fileID: 795351941280053191}
+  - component: {fileID: 5307458934018146501}
   m_Layer: 0
   m_Name: Couch
   m_TagString: Untagged
@@ -279,7 +280,8 @@ MonoBehaviour:
   childObject: {fileID: 796179857300287777}
   realtimeView: {fileID: 5620162031912518545}
   realtimeTransform: {fileID: 5620162031912518546}
-  submenuPrefab: {fileID: 0}
+  submenuPrefab: {fileID: 1995913713131899186, guid: 5ca282de2b3ea364e9aa6df74546683a,
+    type: 3}
   RT: 
 --- !u!114 &507386134653891027
 MonoBehaviour:
@@ -415,3 +417,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoConstraintSelection: 1
   selectedConstraints: []
+--- !u!114 &5307458934018146501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6064906716648866369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ab649197b83a4b468eca1ad45921eb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  furnitureName: 
+  description: 
+  price: 0
