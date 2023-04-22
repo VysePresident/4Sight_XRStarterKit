@@ -4,6 +4,7 @@ using UnityEngine;
 using Microsoft.MixedReality.Toolkit.UI;
 using Microsoft.MixedReality.Toolkit.UI.BoundsControl;
 using Normal.Realtime;
+using UnityEngine.EventSystems;
 
 public class SelectionTest : MonoBehaviour
 {
@@ -26,42 +27,44 @@ public class SelectionTest : MonoBehaviour
 
     void Start()
     {
-		//if (submenuInstance != null)
-		//{
-  //          Debug.Log("submenu is not null, destroy");
-		//	Destroy(submenuInstance);
-		//}
-		//submenuInstance = null;
+
 	}
 
 	void Update()
-    {
+	{
 		if (idle)
-        {
-            if (Input.GetMouseButtonDown(0) && IsMouseOver())
-            {
-                Select();
-            }
-            
-            if (realtimeTransform.isOwnedRemotely)
-            {
-                childObject.GetComponent<Renderer>().material = cantSelectMaterial;
-            }
-            else
-            {
-                childObject.GetComponent<Renderer>().material = originalMaterial;
-            }
-        }
-        if (selected)
-        {
-            if (Input.GetMouseButtonDown(0) && !IsMouseOver() /*&& realtimeTransform.isOwnedRemotely*/)
-            {
-                Deselect();
-            }
-        }
+		{
+			if (Input.GetMouseButtonDown(0) && IsMouseOver() && !IsPointerOverUIElement())
+			{
+				Select();
+			}
+
+			if (realtimeTransform.isOwnedRemotely)
+			{
+				childObject.GetComponent<Renderer>().material = cantSelectMaterial;
+			}
+			else
+			{
+				childObject.GetComponent<Renderer>().material = originalMaterial;
+			}
+		}
+		if (selected)
+		{
+			if (Input.GetMouseButtonDown(0) && !IsMouseOver() && !IsPointerOverUIElement() /*&& realtimeTransform.isOwnedRemotely*/)
+			{
+				Deselect();
+			}
+		}
 	}
 
-    void OnMouseOver()
+
+	private bool IsPointerOverUIElement()
+	{
+		// Check if the pointer is over any UI element
+		return EventSystem.current.IsPointerOverGameObject();
+	}
+
+	void OnMouseOver()
     {
         if (idle)
         {
@@ -94,7 +97,7 @@ public class SelectionTest : MonoBehaviour
         }
         return isMouseOver;
     }
-
+	
 	// Functions for Selection
 	void Deselect()
 	{
@@ -104,21 +107,20 @@ public class SelectionTest : MonoBehaviour
 		childObject.GetComponent<Renderer>().material = originalMaterial;
 
 
-        realtimeView.ClearOwnership();
-        realtimeView.preventOwnershipTakeover = false;
-        realtimeTransform.ClearOwnership();
-        RT = realtimeTransform.ownerID.ToString();
+		realtimeView.ClearOwnership();
+		realtimeView.preventOwnershipTakeover = false;
+		realtimeTransform.ClearOwnership();
+		RT = realtimeTransform.ownerID.ToString();
 
-		//if (submenuInstance != null)
-		//{
-		//	Destroy(submenuInstance);
-		//	submenuInstance = null;
-		//	submenuInstance = null;
-		//}
+		if (submenuInstance != null)
+		{
+			Destroy(submenuInstance);
+			submenuInstance = null;
+			submenuInstance = null;
+		}
 
 	}
-
-
+	
 	void Select()
 	{
 		idle = false;

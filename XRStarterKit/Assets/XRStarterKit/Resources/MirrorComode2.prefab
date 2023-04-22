@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 639995888851972055}
   - component: {fileID: 639995888851972052}
   - component: {fileID: 5626899367514987393}
+  - component: {fileID: 327221077074254585}
   m_Layer: 0
   m_Name: MirrorComode2
   m_TagString: Untagged
@@ -319,6 +320,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoConstraintSelection: 1
   selectedConstraints: []
+--- !u!114 &327221077074254585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240050995217526279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ab649197b83a4b468eca1ad45921eb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  furnitureName: 
+  description: 
+  price: 0
 --- !u!1 &5626106532787101031
 GameObject:
   m_ObjectHideFlags: 0

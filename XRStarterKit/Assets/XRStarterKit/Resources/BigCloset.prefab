@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 1082434587518684116}
   - component: {fileID: 1082434587518684119}
   - component: {fileID: 5328584584295055234}
+  - component: {fileID: -6983321101151494444}
   m_Layer: 0
   m_Name: BigCloset
   m_TagString: Untagged
@@ -319,6 +320,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoConstraintSelection: 1
   selectedConstraints: []
+--- !u!114 &-6983321101151494444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644279594747021828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ab649197b83a4b468eca1ad45921eb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  furnitureName: SlateFlex Stacking Chair
+  description: A sleek and versatile grey plastic chair designed for both indoor
+    and outdoor use. The SlateFlex Stacking Chair boasts a modern aesthetic with
+    its smooth curves and matte grey finish. Constructed from high-quality, weather-resistant
+    plastic, this chair is both lightweight and durable. Its stackable design allows
+    for convenient storage and space-saving solutions, making it perfect for gatherings,
+    events, or everyday use. Embrace contemporary style and practicality with the
+    SlateFlex Stacking Chair
+  price: 59.99
 --- !u!1 &5329973111919556964
 GameObject:
   m_ObjectHideFlags: 0

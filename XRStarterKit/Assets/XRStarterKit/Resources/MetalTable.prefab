@@ -118,6 +118,7 @@ GameObject:
   - component: {fileID: 5024086178483617492}
   - component: {fileID: 5024086178483617495}
   - component: {fileID: 238224817274587778}
+  - component: {fileID: -5439714738403968042}
   m_Layer: 0
   m_Name: MetalTable
   m_TagString: Untagged
@@ -416,3 +417,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoConstraintSelection: 1
   selectedConstraints: []
+--- !u!114 &-5439714738403968042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6659997924128407300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ab649197b83a4b468eca1ad45921eb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  furnitureName: 
+  description: 
+  price: 0
