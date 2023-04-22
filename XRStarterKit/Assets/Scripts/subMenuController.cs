@@ -33,16 +33,33 @@ public class subMenuController : MonoBehaviour
 	}
 
 
+	//public void Remove()
+	//{
+	//	FurnitureController.AddedFurniture.Remove(currentFurnitureObject);
+	//	if (furnitureRealtimeView != null)
+	//	{
+	//		Realtime.Destroy(currentFurnitureObject);
+	//	}
+	//	else
+	//	{
+	//		Debug.LogWarning("Furniture RealtimeView is missing. Falling back to regular Destroy method.");
+	//		FurnitureController.AddedFurniture.Remove(currentFurnitureObject);
+	//		Destroy(currentFurnitureObject);
+	//	}
+	//}
 	public void Remove()
 	{
+		FurnitureController.AddedFurniture.Remove(currentFurnitureObject);
+
+		RealtimeView furnitureRealtimeView = currentFurnitureObject.GetComponent<RealtimeView>();
 		if (furnitureRealtimeView != null)
 		{
-			Realtime.Destroy(currentFurnitureObject);
+			Debug.Log("remove");
+			Realtime.Destroy(furnitureRealtimeView);
 		}
 		else
 		{
 			Debug.LogWarning("Furniture RealtimeView is missing. Falling back to regular Destroy method.");
-			FurnitureController.AddedFurniture.Remove(currentFurnitureObject);
 			Destroy(currentFurnitureObject);
 		}
 	}
