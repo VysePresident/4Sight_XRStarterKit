@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/XRStarterKit/Scenes/WHATSCENE.unity
     guid: 659820a5933a70047bc820f306d43809
+  - enabled: 1
+    path: Assets/XRStarterKit/Scenes/BuyMenuScene.unity
+    guid: 3f91fb5811c274b9086db1f2f0200e41
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 8a56fad9beb30cf4c9e2c8d2b63dc2ae,
       type: 2}
