@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4207143003441407952}
   - component: {fileID: 5792219657074355645}
   - component: {fileID: 6633535104588380926}
+  - component: {fileID: 4030302059430074766}
   m_Layer: 0
   m_Name: 3Seat
   m_TagString: Untagged
@@ -182,7 +183,8 @@ MonoBehaviour:
   childObject: {fileID: 6519235354489993908}
   realtimeView: {fileID: 4207143003441407952}
   realtimeTransform: {fileID: 5792219657074355645}
-  submenuPrefab: {fileID: 0}
+  submenuPrefab: {fileID: 1995913713131899186, guid: 5ca282de2b3ea364e9aa6df74546683a,
+    type: 3}
   RT: 
 --- !u!114 &701480252469971487
 MonoBehaviour:
@@ -318,6 +320,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoConstraintSelection: 1
   selectedConstraints: []
+--- !u!114 &4030302059430074766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3985413396581353204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ab649197b83a4b468eca1ad45921eb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  furnitureName: TriComfort Sofa
+  description: "\u0410 stylish and cozy three-seater couch designed to provide ample
+    seating and exceptional comfort for your living space. The TriComfort Sofa features
+    a contemporary design with clean lines, complemented by plush cushioning and
+    high-quality upholstery. The sofa's sturdy frame ensures long-lasting durability,
+    while its three spacious seats allow you and your guests to relax in style. The
+    TriComfort Sofa is an ideal choice for those seeking both function and elegance
+    in their home furnishings."
+  price: 379.99
 --- !u!1 &6519235354489993908
 GameObject:
   m_ObjectHideFlags: 0

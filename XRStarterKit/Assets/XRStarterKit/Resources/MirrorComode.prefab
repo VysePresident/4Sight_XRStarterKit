@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4333404533104540525}
   - component: {fileID: 4333404533104540526}
   - component: {fileID: 8850738207212556091}
+  - component: {fileID: -58102425321719093}
   m_Layer: 0
   m_Name: MirrorComode
   m_TagString: Untagged
@@ -182,7 +183,8 @@ MonoBehaviour:
   childObject: {fileID: 8849875347064195549}
   realtimeView: {fileID: 4333404533104540525}
   realtimeTransform: {fileID: 4333404533104540526}
-  submenuPrefab: {fileID: 0}
+  submenuPrefab: {fileID: 1995913713131899186, guid: 5ca282de2b3ea364e9aa6df74546683a,
+    type: 3}
   RT: 
 --- !u!114 &8563333976789027119
 MonoBehaviour:
@@ -318,6 +320,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoConstraintSelection: 1
   selectedConstraints: []
+--- !u!114 &-58102425321719093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2735773390827125437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ab649197b83a4b468eca1ad45921eb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  furnitureName: 
+  description: 
+  price: 0
 --- !u!1 &8849875347064195549
 GameObject:
   m_ObjectHideFlags: 0
