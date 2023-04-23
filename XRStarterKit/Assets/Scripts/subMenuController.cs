@@ -33,24 +33,8 @@ public class subMenuController : MonoBehaviour
 	}
 
 
-	//public void Remove()
-	//{
-	//	FurnitureController.AddedFurniture.Remove(currentFurnitureObject);
-	//	if (furnitureRealtimeView != null)
-	//	{
-	//		Realtime.Destroy(currentFurnitureObject);
-	//	}
-	//	else
-	//	{
-	//		Debug.LogWarning("Furniture RealtimeView is missing. Falling back to regular Destroy method.");
-	//		FurnitureController.AddedFurniture.Remove(currentFurnitureObject);
-	//		Destroy(currentFurnitureObject);
-	//	}
-	//}
 	public void Remove()
 	{
-		FurnitureController.AddedFurniture.Remove(currentFurnitureObject);
-
 		RealtimeView furnitureRealtimeView = currentFurnitureObject.GetComponent<RealtimeView>();
 		if (furnitureRealtimeView != null)
 		{
@@ -80,8 +64,19 @@ public class subMenuController : MonoBehaviour
 
 	public void Restart()
 	{
-		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+		// Find all GameObjects with RealtimeView components
+		RealtimeView[] realtimeViews = FindObjectsOfType<RealtimeView>();
+
+		// Iterate through each RealtimeView and destroy the associated GameObject
+		foreach (RealtimeView realtimeView in realtimeViews)
+		{
+			if (realtimeView.gameObject.CompareTag("Furniture"))
+			{
+				Realtime.Destroy(realtimeView.gameObject);
+			}
+		}
 	}
+
 
 	public void CloseARView()
 	{

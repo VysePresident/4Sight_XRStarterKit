@@ -42,7 +42,6 @@ public class TapToMakeAppear : MonoBehaviour
                 Vector3 objectPos = Camera.main.ScreenToWorldPoint(mousePos);
                 // Using Realtime.Instantiate
                 GameObject newObject = Realtime.Instantiate(cubePrefab.name, objectPos, Quaternion.identity, destroyWhenOwnerOrLastClientLeaves: false);
-				FurnitureController.AddedFurniture.Add(newObject);
 				cubeCreated = true;
                 mode = editMode.Move;
             }
