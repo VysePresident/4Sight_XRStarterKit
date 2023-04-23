@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4330861905114397926}
   - component: {fileID: 6494176133070139672}
   - component: {fileID: 9150392012231184504}
+  - component: {fileID: 3344451668664313541}
   m_Layer: 5
   m_Name: Remove Button
   m_TagString: Untagged
@@ -61,7 +62,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8867924, g: 0.6399964, b: 0.6399964, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -122,6 +123,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &3344451668664313541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421326840630150895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c54f995889bcd4adfbf50678957e8b47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PriceSection: {fileID: 0}
 --- !u!1 &4697465072654920023
 GameObject:
   m_ObjectHideFlags: 0

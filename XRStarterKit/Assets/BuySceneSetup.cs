@@ -6,18 +6,19 @@ using TMPro;
 public class BuySceneSetup : MonoBehaviour
 {
     public GameObject ContentHolder;
+    public GameObject PriceSection;
     public GameObject[] Elements;
 
     // Start is called before the first frame update
     void Start()
     {
+        // Debug.Log(BuyManagerScript.TotalCost);
         int totalElements = ContentHolder.transform.childCount;
         Elements = new GameObject[totalElements];
 
         for (int i =0; i < totalElements; i++) 
         {
             Elements[i] = ContentHolder.transform.GetChild(i).gameObject;
-            Debug.Log(Elements[i].transform.GetChild(3).GetComponent<TextMeshProUGUI>().text);
 
             if (BuyManagerScript.NumBought[i] == '0')
             {
@@ -30,6 +31,10 @@ public class BuySceneSetup : MonoBehaviour
                 Elements[i].transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = BuyManagerScript.NumBought[i].ToString();
             }
         }
+
+        PriceSection.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "$" + BuyManagerScript.TotalCost.ToString();
+
+
 
     }
 

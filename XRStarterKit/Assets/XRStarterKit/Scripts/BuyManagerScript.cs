@@ -30,6 +30,6 @@ public class BuyManagerScript : MonoBehaviour
     {
         String adding = (int.Parse(NumBought[Array.IndexOf(Elements, ObjectBought)].ToString()) + 1).ToString();
         NumBought =  NumBought.Remove(Array.IndexOf(Elements, ObjectBought), 1).Insert(Array.IndexOf(Elements, ObjectBought), adding);
-        // TotalCost = TotalCost + float.Parse(ObjectBought.transform.GetChild(3).GetComponent<TextMeshPro>().text);
+        TotalCost = TotalCost + float.Parse(ObjectBought.transform.GetChild(3).GetComponent<TextMeshProUGUI>().text.Substring(1));
     }
 }
