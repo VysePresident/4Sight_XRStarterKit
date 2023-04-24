@@ -135,7 +135,7 @@ Transform:
   m_GameObject: {fileID: 6659997924128407300}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3135713031991313061}
@@ -247,12 +247,12 @@ MonoBehaviour:
   defaultPlacementDistance: 1.5
   maxRaycastDistance: 20
   surfaceNormalOffset: 0
-  useDefaultSurfaceNormalOffset: 1
+  useDefaultSurfaceNormalOffset: 0
   keepOrientationVertical: 1
   rotateAccordingToSurface: 0
   magneticSurfaces:
   - serializedVersion: 2
-    m_Bits: 4294967291
+    m_Bits: 64
   debugEnabled: 1
   onPlacingStarted:
     m_PersistentCalls:

@@ -247,7 +247,7 @@ MonoBehaviour:
   defaultPlacementDistance: 1.5
   maxRaycastDistance: 20
   surfaceNormalOffset: 0
-  useDefaultSurfaceNormalOffset: 1
+  useDefaultSurfaceNormalOffset: 0
   keepOrientationVertical: 1
   rotateAccordingToSurface: 0
   magneticSurfaces:

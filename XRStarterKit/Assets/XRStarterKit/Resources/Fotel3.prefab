@@ -203,8 +203,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.404782, y: 1.5219355, z: 1.3735485}
-  m_Center: {x: 0.0043861866, y: 0.73336756, z: 0.004310608}
+  m_Size: {x: 1.404782, y: 1.2139722, z: 1.3735486}
+  m_Center: {x: 0.004386223, y: 0.8873491, z: 0.004310623}
 --- !u!114 &9216795580959046207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,12 +247,12 @@ MonoBehaviour:
   defaultPlacementDistance: 1.5
   maxRaycastDistance: 20
   surfaceNormalOffset: 0
-  useDefaultSurfaceNormalOffset: 1
+  useDefaultSurfaceNormalOffset: 0
   keepOrientationVertical: 1
   rotateAccordingToSurface: 0
   magneticSurfaces:
   - serializedVersion: 2
-    m_Bits: 4294967291
+    m_Bits: 64
   debugEnabled: 1
   onPlacingStarted:
     m_PersistentCalls:

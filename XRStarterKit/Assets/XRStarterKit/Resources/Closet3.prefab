@@ -221,7 +221,7 @@ MonoBehaviour:
   trackedHandedness: 3
   trackedHandJoint: 2
   transformOverride: {fileID: 0}
-  additionalOffset: {x: 0, y: 0, z: 0}
+  additionalOffset: {x: 0, y: 0, z: 1}
   additionalRotation: {x: 0, y: 0, z: 0}
   updateSolvers: 1
 --- !u!114 &6897207515314778570
@@ -247,12 +247,12 @@ MonoBehaviour:
   defaultPlacementDistance: 1.5
   maxRaycastDistance: 20
   surfaceNormalOffset: 0
-  useDefaultSurfaceNormalOffset: 1
+  useDefaultSurfaceNormalOffset: 0
   keepOrientationVertical: 1
   rotateAccordingToSurface: 0
   magneticSurfaces:
   - serializedVersion: 2
-    m_Bits: 4294967291
+    m_Bits: 64
   debugEnabled: 1
   onPlacingStarted:
     m_PersistentCalls:
