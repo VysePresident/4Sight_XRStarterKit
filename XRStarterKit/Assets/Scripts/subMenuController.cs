@@ -2,18 +2,20 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Normal.Realtime;
-
+using TMPro;
 
 public class subMenuController : MonoBehaviour
 {
-	public Text furnitureNameText;
-	public Text descriptionText;
-	public Text priceText;
+	public TextMeshProUGUI furnitureNameText;
+	public TextMeshProUGUI descriptionText;
+	public TextMeshProUGUI priceText;
+
 
 	private FurnitureDetails currentFurnitureDetails;
 	private GameObject currentFurnitureObject;
 
 	private RealtimeView furnitureRealtimeView;
+	public DetailsPanelController detailsPanelController;
 
 	public void SetFurnitureDetails(FurnitureDetails furnitureDetails, GameObject furnitureObject)
 	{
@@ -48,13 +50,23 @@ public class subMenuController : MonoBehaviour
 		}
 	}
 
-
-
 	public void ShowDetails()
 	{
-		// You can display additional details or open another UI panel here.
-		Debug.Log("Show furniture details");
+		if(detailsPanelController == null)
+		{
+			Debug.Log("Details is null");
+		}
+		if(currentFurnitureDetails == null)
+		{
+			Debug.Log("currentFurnitureDetails is null");
+		}
+		if (detailsPanelController != null && currentFurnitureDetails != null)
+		{
+			Debug.Log("ShowDetails() called");
+			detailsPanelController.Show(currentFurnitureDetails);
+		}
 	}
+
 
 	public void AddToCart()
 	{
