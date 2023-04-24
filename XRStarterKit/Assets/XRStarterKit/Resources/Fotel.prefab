@@ -106,8 +106,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.2573051, y: 1.2928, z: 1.6585622}
-  m_Center: {x: -0.02212286, y: 0.6170969, z: -0.027073622}
+  m_Size: {x: 2.2644744, y: 1.2415458, z: 1.6585622}
+  m_Center: {x: -0.018537695, y: 0.6427239, z: -0.02707362}
 --- !u!114 &1316521220368843827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,12 +150,12 @@ MonoBehaviour:
   defaultPlacementDistance: 1.5
   maxRaycastDistance: 20
   surfaceNormalOffset: 0
-  useDefaultSurfaceNormalOffset: 1
+  useDefaultSurfaceNormalOffset: 0
   keepOrientationVertical: 1
   rotateAccordingToSurface: 0
   magneticSurfaces:
   - serializedVersion: 2
-    m_Bits: 4294967291
+    m_Bits: 64
   debugEnabled: 1
   onPlacingStarted:
     m_PersistentCalls:
@@ -362,8 +362,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5576371996541957969}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0096, y: 0.5944, z: -0.0111}
-  m_LocalScale: {x: 2.2321348, y: 1.2532998, z: 1.560905}
+  m_LocalPosition: {x: 0.0096, y: 0.6131, z: -0.0111}
+  m_LocalScale: {x: 2.2321348, y: 1.2159514, z: 1.560905}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1316521220368843855}
