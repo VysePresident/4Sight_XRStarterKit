@@ -36,20 +36,13 @@ public class subMenuController : MonoBehaviour
 			furnitureDetailsPanelInstance = Instantiate(furnitureDetailsPanel);
 			furnitureDetailsPanelInstance.transform.SetParent(transform, false);
 
-			//UpdateFurnitureDetailsPanel(currentFurnitureObject);
-			StartCoroutine(UpdateFurnitureDetailsPanelAfterOneFrame(currentFurnitureObject));
+			UpdateFurnitureDetailsPanel(currentFurnitureObject);
 		}
 		else
 		{
 			Destroy(furnitureDetailsPanelInstance);
 			furnitureDetailsPanelInstance = null;
 		}
-	}
-
-	private IEnumerator UpdateFurnitureDetailsPanelAfterOneFrame(GameObject selectedFurniture)
-	{
-		yield return null; // Wait for one frame
-		UpdateFurnitureDetailsPanel(selectedFurniture);
 	}
 
 	public void ShowDetails()
