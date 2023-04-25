@@ -65,8 +65,22 @@ public class SelectionTest : MonoBehaviour
 
 	private bool IsPointerOverUIElement()
 	{
-		// Check if the pointer is over any UI element
-		return EventSystem.current.IsPointerOverGameObject();
+		// Touch screen
+		if (Input.touchCount > 0)
+        {
+            foreach (Touch touch in Input.touches)
+            {
+                if (EventSystem.current.IsPointerOverGameObject(touch.fingerId))
+                {
+                    return true;
+                }
+            }
+        }
+		else {
+			// Check if the pointer is over any UI element
+			return EventSystem.current.IsPointerOverGameObject();
+		}
+		return false;
 	}
 
 	void OnMouseOver()
@@ -84,7 +98,7 @@ public class SelectionTest : MonoBehaviour
     {
         if (selected)
         {
-            if (Input.GetMouseButtonDown(0) && !IsMouseOver() /*&& realtimeTransform.isOwnedRemotely*/)
+            if (Input.GetMouseButtonDown(0) && !IsMouseOver() && !IsPointerOverUIElement() /*&& realtimeTransform.isOwnedRemotely*/)
             {
                 Deselect();
             }
