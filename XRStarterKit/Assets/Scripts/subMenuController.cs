@@ -2,34 +2,53 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Normal.Realtime;
-
+using TMPro;
 
 public class subMenuController : MonoBehaviour
 {
-	public Text furnitureNameText;
-	public Text descriptionText;
-	public Text priceText;
+	public TextMeshProUGUI furnitureNameText;
+	public TextMeshProUGUI descriptionText;
+	public TextMeshProUGUI priceText;
 
-	private FurnitureDetails currentFurnitureDetails;
-	private GameObject currentFurnitureObject;
-
+	public GameObject currentFurnitureObject;
 	private RealtimeView furnitureRealtimeView;
+	public GameObject furnitureDetailsPanel;
 
-	public void SetFurnitureDetails(FurnitureDetails furnitureDetails, GameObject furnitureObject)
+	public void UpdateFurnitureDetailsPanel(GameObject selectedFurniture)
 	{
-		if (furnitureDetails == null || furnitureObject == null)
+		// Get the SelectionTest component from the selected furniture
+		SelectionTest selectionTest = selectedFurniture.GetComponent<SelectionTest>();
+
+		// Update the UI Text components with the furniture details
+		furnitureNameText.text = selectionTest.furnitureName;
+		descriptionText.text = selectionTest.furnitureDescription;
+		priceText.text = selectionTest.furniturePrice.ToString();
+	}
+
+	public void ToggleFurnitureDetailsPanel()
+	{
+		if (furnitureDetailsPanel.activeSelf)
 		{
-			Debug.LogError("FurnitureDetails or furnitureObject is null.");
-			return;
+			furnitureDetailsPanel.SetActive(false);
 		}
+		else
+		{
+			// Update the FurnitureDetailsPanel with the selected furniture details
+			UpdateFurnitureDetailsPanel(currentFurnitureObject);
+			furnitureDetailsPanel.SetActive(true);
+		}
+	}
 
-		currentFurnitureDetails = furnitureDetails;
-		currentFurnitureObject = furnitureObject;
 
-		// Update UI elements with furniture details
-		if (furnitureNameText != null) furnitureNameText.text = furnitureDetails.furnitureName;
-		if (descriptionText != null) descriptionText.text = furnitureDetails.description;
-		if (priceText != null) priceText.text = $"${furnitureDetails.price}";
+	public void ShowDetails()
+	{
+		ToggleFurnitureDetailsPanel();
+		Debug.Log("Show furniture details");
+	}
+
+	public void HideDetails()
+	{
+		furnitureDetailsPanel.SetActive(false); // Deactivate the panel
 	}
 
 
@@ -49,18 +68,11 @@ public class subMenuController : MonoBehaviour
 	}
 
 
-
-	public void ShowDetails()
-	{
-		// You can display additional details or open another UI panel here.
-		Debug.Log("Show furniture details");
-	}
-
-	public void AddToCart()
-	{
-		// Implement the logic to add the furniture to the cart
-		Debug.Log($"Add {currentFurnitureDetails.furnitureName} to cart");
-	}
+	//public void AddToCart()
+	//{
+	//	// Implement the logic to add the furniture to the cart
+	//	Debug.Log($"Add {currentFurnitureDetails.furnitureName} to cart");
+	//}
 
 	public void Restart()
 	{

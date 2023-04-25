@@ -282,6 +282,9 @@ MonoBehaviour:
   realtimeTransform: {fileID: 4699530409797686934}
   submenuPrefab: {fileID: 1995913713131899186, guid: 5ca282de2b3ea364e9aa6df74546683a,
     type: 3}
+  furnitureName: Closet2
+  furnitureDescription: sdf
+  furniturePrice: 0
   RT: 
 --- !u!114 &850156225414522071
 MonoBehaviour:

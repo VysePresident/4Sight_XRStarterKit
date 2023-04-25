@@ -185,6 +185,9 @@ MonoBehaviour:
   realtimeTransform: {fileID: 1082434587518684119}
   submenuPrefab: {fileID: 1995913713131899186, guid: 5ca282de2b3ea364e9aa6df74546683a,
     type: 3}
+  furnitureName: BigCloset
+  furnitureDescription: test1
+  furniturePrice: 0
   RT: 
 --- !u!114 &5040053630081546646
 MonoBehaviour:
