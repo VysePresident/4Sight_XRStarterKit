@@ -23,6 +23,11 @@ public class SelectionTest : MonoBehaviour
 	public GameObject submenuPrefab;
 	private GameObject submenuInstance;
 
+	// Add fields for furniture details
+	public string furnitureName;
+	public string furnitureDescription;
+	public float furniturePrice;
+
 	public string RT;
 
     void Start()
@@ -116,7 +121,6 @@ public class SelectionTest : MonoBehaviour
 		{
 			Destroy(submenuInstance);
 			submenuInstance = null;
-			submenuInstance = null;
 		}
 
 	}
@@ -140,10 +144,16 @@ public class SelectionTest : MonoBehaviour
 			submenuInstance.transform.SetParent(childObject.transform);
 
 			// Pass the selected furniture's details, the furniture object, and the RealtimeView component to the submenu
-			FurnitureDetails furnitureDetails = GetComponent<FurnitureDetails>();
-			RealtimeView furnitureRealtimeView = GetComponent<RealtimeView>();
-			subMenuController submenuController = submenuInstance.GetComponent<subMenuController>();
-			submenuController.SetFurnitureDetails(furnitureDetails, gameObject);
+			//FurnitureDetails furnitureDetails = GetComponent<FurnitureDetails>();
+			//Debug.Log("Furniture details in selection test" + furnitureDetails);
+			//RealtimeView furnitureRealtimeView = GetComponent<RealtimeView>();
+			//subMenuController submenuController = submenuInstance.GetComponent<subMenuController>();
+			//submenuController.SetFurnitureDetails(furnitureDetails, gameObject);
+			subMenuController subMenuCtrl = submenuInstance.GetComponent<subMenuController>();
+			if (subMenuCtrl != null)
+			{
+				subMenuCtrl.currentFurnitureObject = gameObject;
+			}
 		}
 
 	}

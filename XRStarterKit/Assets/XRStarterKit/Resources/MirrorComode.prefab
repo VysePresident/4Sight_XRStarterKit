@@ -183,8 +183,11 @@ MonoBehaviour:
   childObject: {fileID: 8849875347064195549}
   realtimeView: {fileID: 4333404533104540525}
   realtimeTransform: {fileID: 4333404533104540526}
-  submenuPrefab: {fileID: 1995913713131899186, guid: 5ca282de2b3ea364e9aa6df74546683a,
+  submenuPrefab: {fileID: 3473750302105048174, guid: c4857ec75dba88941ae9c97581bf0abf,
     type: 3}
+  furnitureName: MirrorComode
+  furnitureDescription: 
+  furniturePrice: 0
   RT: 
 --- !u!114 &8563333976789027119
 MonoBehaviour:

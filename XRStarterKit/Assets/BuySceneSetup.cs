@@ -12,7 +12,7 @@ public class BuySceneSetup : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Debug.Log(BuyManagerScript.TotalCost);
+        Debug.Log(BuyManagerScript.TotalCost);
         int totalElements = ContentHolder.transform.childCount;
         Elements = new GameObject[totalElements];
 

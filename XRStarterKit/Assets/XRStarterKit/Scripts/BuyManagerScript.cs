@@ -9,7 +9,7 @@ public class BuyManagerScript : MonoBehaviour
 {
     public GameObject ContentHolder;
     public GameObject[] Elements;
-    public static string NumBought;
+    public static string NumBought = "";
     public static float TotalCost = 0;
 
     // Start is called before the first frame update
@@ -17,11 +17,15 @@ public class BuyManagerScript : MonoBehaviour
     {
         int totalElements = ContentHolder.transform.childCount;
         Elements = new GameObject[totalElements];
-        NumBought = "";
+
+        bool needsToBeSet = string.Equals(NumBought, "");
 
         for (int i =0; i < totalElements; i++) 
         {
-            NumBought = NumBought + "0";
+            if (needsToBeSet == true)
+            {
+                NumBought = NumBought + "0";
+            }
             Elements[i] = ContentHolder.transform.GetChild(i).gameObject;
         }
     }
