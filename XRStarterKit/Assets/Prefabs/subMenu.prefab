@@ -735,6 +735,7 @@ GameObject:
   - component: {fileID: 3473750302105048172}
   - component: {fileID: 3473750302105048175}
   - component: {fileID: 3473750302105048163}
+  - component: {fileID: 7832966797395488434}
   m_Layer: 5
   m_Name: subMenu
   m_TagString: Untagged
@@ -844,6 +845,20 @@ MonoBehaviour:
     type: 3}
   currentFurnitureObject: {fileID: 0}
   furnitureDetailsPanel: {fileID: 8915027418922494016, guid: 8134cebc114c265459365841e4b8a4b2,
+    type: 3}
+--- !u!114 &7832966797395488434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3473750302105048174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d378f325f54be1f47be5f30797d7e029, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelPrefab: {fileID: 8915027418922494016, guid: 8134cebc114c265459365841e4b8a4b2,
     type: 3}
 --- !u!1 &3473750302396196916
 GameObject:
@@ -992,6 +1007,7 @@ GameObject:
   - component: {fileID: 3473750302444858592}
   - component: {fileID: 3473750302444858595}
   - component: {fileID: 3473750302444858594}
+  - component: {fileID: 2678790971444854202}
   m_Layer: 0
   m_Name: DetailsButton
   m_TagString: Untagged
@@ -1103,7 +1119,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3473750302105048163}
-        m_TargetAssemblyTypeName: SubmenuController, Assembly-CSharp
+        m_TargetAssemblyTypeName: subMenuController, Assembly-CSharp
         m_MethodName: ShowDetails
         m_Mode: 1
         m_Arguments:
@@ -1114,6 +1130,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2678790971444854202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3473750302444858604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d378f325f54be1f47be5f30797d7e029, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelPrefab: {fileID: 0}
 --- !u!1 &3473750302555428099
 GameObject:
   m_ObjectHideFlags: 0

@@ -183,8 +183,11 @@ MonoBehaviour:
   childObject: {fileID: 5576371996541957969}
   realtimeView: {fileID: 833458413012600289}
   realtimeTransform: {fileID: 833458413012600290}
-  submenuPrefab: {fileID: 1995913713131899186, guid: 5ca282de2b3ea364e9aa6df74546683a,
+  submenuPrefab: {fileID: 3473750302105048174, guid: c4857ec75dba88941ae9c97581bf0abf,
     type: 3}
+  furnitureName: Fotel
+  furnitureDescription: Test
+  furniturePrice: 0
   RT: 
 --- !u!114 &4712243597144307619
 MonoBehaviour:

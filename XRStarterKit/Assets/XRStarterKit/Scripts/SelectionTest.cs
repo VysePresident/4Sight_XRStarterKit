@@ -121,7 +121,6 @@ public class SelectionTest : MonoBehaviour
 		{
 			Destroy(submenuInstance);
 			submenuInstance = null;
-			submenuInstance = null;
 		}
 
 	}

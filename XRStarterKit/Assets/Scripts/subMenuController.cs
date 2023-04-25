@@ -30,36 +30,27 @@ public class subMenuController : MonoBehaviour
 
 	public void ToggleFurnitureDetailsPanel()
 	{
-	
-		if (furnitureDetailsPanel.activeSelf)
-		{
-			furnitureDetailsPanel.SetActive(false);
-		}
-		else
-		{
-			// Update the FurnitureDetailsPanel with the selected furniture details
-			UpdateFurnitureDetailsPanel(currentFurnitureObject);
-			furnitureDetailsPanel.SetActive(true);
-		}
-	
-		/*
 		if (furnitureDetailsPanelInstance == null)
 		{
 			Debug.Log("furnitureDetailsPanelInstance is null");
-			furnitureDetailsPanelInstance = Instantiate(furnitureDetailsPanel, currentFurnitureObject.transform.position, Quaternion.identity);
-			furnitureDetailsPanelInstance.transform.SetParent(currentFurnitureObject.transform);
+			furnitureDetailsPanelInstance = Instantiate(furnitureDetailsPanel);
+			furnitureDetailsPanelInstance.transform.SetParent(transform, false);
 
-			UpdateFurnitureDetailsPanel(currentFurnitureObject);
+			//UpdateFurnitureDetailsPanel(currentFurnitureObject);
+			StartCoroutine(UpdateFurnitureDetailsPanelAfterOneFrame(currentFurnitureObject));
 		}
 		else
 		{
 			Destroy(furnitureDetailsPanelInstance);
 			furnitureDetailsPanelInstance = null;
 		}
-		*/
-		
 	}
 
+	private IEnumerator UpdateFurnitureDetailsPanelAfterOneFrame(GameObject selectedFurniture)
+	{
+		yield return null; // Wait for one frame
+		UpdateFurnitureDetailsPanel(selectedFurniture);
+	}
 
 	public void ShowDetails()
 	{

@@ -280,7 +280,7 @@ MonoBehaviour:
   childObject: {fileID: 561363125557781541}
   realtimeView: {fileID: 4699530409797686933}
   realtimeTransform: {fileID: 4699530409797686934}
-  submenuPrefab: {fileID: 1995913713131899186, guid: 5ca282de2b3ea364e9aa6df74546683a,
+  submenuPrefab: {fileID: 3473750302105048174, guid: c4857ec75dba88941ae9c97581bf0abf,
     type: 3}
   furnitureName: Closet2
   furnitureDescription: sdf

@@ -280,8 +280,11 @@ MonoBehaviour:
   childObject: {fileID: 2760897041776687356}
   realtimeView: {fileID: 6963382994991729228}
   realtimeTransform: {fileID: 6963382994991729231}
-  submenuPrefab: {fileID: 1995913713131899186, guid: 5ca282de2b3ea364e9aa6df74546683a,
+  submenuPrefab: {fileID: 3473750302105048174, guid: c4857ec75dba88941ae9c97581bf0abf,
     type: 3}
+  furnitureName: RoundTable
+  furnitureDescription: The table is round
+  furniturePrice: 0
   RT: 
 --- !u!114 &3050816458691065870
 MonoBehaviour:
