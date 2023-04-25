@@ -280,8 +280,11 @@ MonoBehaviour:
   childObject: {fileID: 41012243788530345}
   realtimeView: {fileID: 5072177572415664153}
   realtimeTransform: {fileID: 5072177572415664154}
-  submenuPrefab: {fileID: 1995913713131899186, guid: 5ca282de2b3ea364e9aa6df74546683a,
+  submenuPrefab: {fileID: 3473750302105048174, guid: c4857ec75dba88941ae9c97581bf0abf,
     type: 3}
+  furnitureName: Closet3
+  furnitureDescription: 123
+  furniturePrice: 0
   RT: 
 --- !u!114 &907392002243527259
 MonoBehaviour:
