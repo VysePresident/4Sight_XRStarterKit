@@ -13,20 +13,24 @@ public class subMenuController : MonoBehaviour
 	public GameObject currentFurnitureObject;
 	private RealtimeView furnitureRealtimeView;
 	public GameObject furnitureDetailsPanel;
+	private GameObject furnitureDetailsPanelInstance;
 
 	public void UpdateFurnitureDetailsPanel(GameObject selectedFurniture)
 	{
 		// Get the SelectionTest component from the selected furniture
+		Debug.Log("Update Furniture Details");
 		SelectionTest selectionTest = selectedFurniture.GetComponent<SelectionTest>();
 
 		// Update the UI Text components with the furniture details
 		furnitureNameText.text = selectionTest.furnitureName;
 		descriptionText.text = selectionTest.furnitureDescription;
 		priceText.text = selectionTest.furniturePrice.ToString();
+		Debug.Log(furnitureNameText.text + descriptionText.text + priceText.text);
 	}
 
 	public void ToggleFurnitureDetailsPanel()
 	{
+	
 		if (furnitureDetailsPanel.activeSelf)
 		{
 			furnitureDetailsPanel.SetActive(false);
@@ -37,6 +41,23 @@ public class subMenuController : MonoBehaviour
 			UpdateFurnitureDetailsPanel(currentFurnitureObject);
 			furnitureDetailsPanel.SetActive(true);
 		}
+	
+		/*
+		if (furnitureDetailsPanelInstance == null)
+		{
+			Debug.Log("furnitureDetailsPanelInstance is null");
+			furnitureDetailsPanelInstance = Instantiate(furnitureDetailsPanel, currentFurnitureObject.transform.position, Quaternion.identity);
+			furnitureDetailsPanelInstance.transform.SetParent(currentFurnitureObject.transform);
+
+			UpdateFurnitureDetailsPanel(currentFurnitureObject);
+		}
+		else
+		{
+			Destroy(furnitureDetailsPanelInstance);
+			furnitureDetailsPanelInstance = null;
+		}
+		*/
+		
 	}
 
 
