@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Microsoft.MixedReality.Toolkit.UI;
 using Microsoft.MixedReality.Toolkit.UI.BoundsControl;
+using Microsoft.MixedReality.Toolkit.Utilities.Solvers;
 using Normal.Realtime;
 using UnityEngine.EventSystems;
 
@@ -32,6 +33,8 @@ public class SelectionTest : MonoBehaviour
 	//public BoundsControl boundsControl;
 	//public bool areBoundsRotating;
 
+	private TapToPlace tapToPlace;
+
 	public string RT;
 
     void Start()
@@ -40,6 +43,7 @@ public class SelectionTest : MonoBehaviour
 		//boundsControl = GetComponent<BoundsControl>();
 		//boundsControl.RotateStarted.AddListener(OnRotateStarted);
 		//boundsControl.RotateStopped.AddListener(OnRotateStopped);
+		tapToPlace = GetComponent<TapToPlace>();
 	}
 
 	void Update()
@@ -207,5 +211,25 @@ public class SelectionTest : MonoBehaviour
     {
 		Select();
     }
+
+	public void disableTTP()
+    {
+		if (tapToPlace.IsBeingPlaced)
+        {
+			tapToPlace.StopPlacement();
+        }
+		tapToPlace.enabled = false;
+    }
+
+	public void InvokeEnableTTP()
+    {
+		Deselect();
+		Invoke("enableTTP", 0.2f);
+    }
+
+	private void enableTTP()
+	{
+		tapToPlace.enabled = true;
+	}
 }
    

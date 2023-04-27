@@ -136,15 +136,11 @@ PlayerSettings:
     Others: 1
   bundleVersion: 0.1
 <<<<<<< HEAD
-<<<<<<< HEAD
   preloadedAssets:
 
 =======
   preloadedAssets: []
 >>>>>>> parent of a37ddc6 (Added some functionality to the confirm button. Since confirming means you are buying what is in the cart, the cart is deleted)
-=======
-  preloadedAssets: []
->>>>>>> parent of 4922ae1 (Improved Movement and TTP Integration)
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
