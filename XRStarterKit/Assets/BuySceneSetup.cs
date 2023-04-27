@@ -12,7 +12,7 @@ public class BuySceneSetup : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(BuyManagerScript.NumBought);
+        Debug.Log(BuyManagerScript.TotalCost);
         int totalElements = ContentHolder.transform.childCount;
         Elements = new GameObject[totalElements];
 
@@ -33,6 +33,9 @@ public class BuySceneSetup : MonoBehaviour
         }
 
         PriceSection.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "$" + BuyManagerScript.TotalCost.ToString();
+
+
+
     }
 
     // Update is called once per frame
@@ -40,6 +43,4 @@ public class BuySceneSetup : MonoBehaviour
     {
         
     }
-
-    
 }
