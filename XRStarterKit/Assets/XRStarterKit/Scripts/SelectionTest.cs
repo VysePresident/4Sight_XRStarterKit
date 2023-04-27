@@ -28,15 +28,23 @@ public class SelectionTest : MonoBehaviour
 	public string furnitureDescription;
 	public float furniturePrice;
 
+	// ALEX - EXPERIMENTAL EDITS TO ALLOW ROTATION WHILE USING BOUNDS CONTROLS:
+	//public BoundsControl boundsControl;
+	//public bool areBoundsRotating;
+
 	public string RT;
 
     void Start()
     {
-
+		// ALEX - EXPERIMENTAL EDITS TO ALLOW ROTATION WHILE USING BOUNDS CONTROLS:
+		//boundsControl = GetComponent<BoundsControl>();
+		//boundsControl.RotateStarted.AddListener(OnRotateStarted);
+		//boundsControl.RotateStopped.AddListener(OnRotateStopped);
 	}
 
 	void Update()
 	{
+		
 		if (idle)
 		{
 			if (Input.GetMouseButtonDown(0) && IsMouseOver() && !IsPointerOverUIElement())
@@ -172,5 +180,30 @@ public class SelectionTest : MonoBehaviour
 
 	}
 
+	// ALEX - EXPERIMENTAL EDITS TO ALLOW ROTATION WHILE USING BOUNDS CONTROLS:
+
+	/*private void OnRotateStarted()
+    {
+		areBoundsRotating = true;
+		Select();
+    }
+
+	private void OnRotateStopped()
+	{
+		areBoundsRotating = true;
+		Select();
+		StartCoroutine(ResetAreBoundsRotating());
+	}
+
+	private IEnumerator ResetAreBoundsRotating()
+    {
+		yield return new WaitForSeconds(0.3f);
+		areBoundsRotating = false;
+    }*/
+
+	public void keep_selection()
+    {
+		Select();
+    }
 }
    
