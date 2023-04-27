@@ -139,6 +139,7 @@ PlayerSettings:
 <<<<<<< HEAD
   preloadedAssets:
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
   preloadedAssets: []
@@ -151,6 +152,9 @@ PlayerSettings:
   - {fileID: -6559655335359982712, guid: 5b2a5748677d7c44da7f65cf024435e0, type: 2}
   - {fileID: 4800000, guid: c9f956787b1d945e7b36e0516201fc76, type: 3}
 >>>>>>> parent of 27d6442 (Merge branch 'main' into AIB_MOVEMENT_IMPROVEMENTS)
+=======
+  - {fileID: 1949054787871864526, guid: 5b2a5748677d7c44da7f65cf024435e0, type: 2}
+>>>>>>> parent of 0f4a736 (Merge pull request #47 from VysePresident/AIB_MOVEMENT_IMPROVEMENTS)
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
