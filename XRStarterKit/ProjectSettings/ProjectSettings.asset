@@ -138,7 +138,6 @@ PlayerSettings:
 <<<<<<< HEAD
 <<<<<<< HEAD
   preloadedAssets:
-<<<<<<< HEAD
 
 =======
   preloadedAssets: []
@@ -146,11 +145,6 @@ PlayerSettings:
 =======
   preloadedAssets: []
 >>>>>>> parent of 4922ae1 (Improved Movement and TTP Integration)
-=======
-  - {fileID: -8858550139544699794, guid: a88b80b0b5f8e9a49a77c39bf65f02ed, type: 2}
-  - {fileID: -6559655335359982712, guid: 5b2a5748677d7c44da7f65cf024435e0, type: 2}
-  - {fileID: 4800000, guid: c9f956787b1d945e7b36e0516201fc76, type: 3}
->>>>>>> parent of 27d6442 (Merge branch 'main' into AIB_MOVEMENT_IMPROVEMENTS)
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
