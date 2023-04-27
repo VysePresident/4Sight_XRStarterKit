@@ -280,7 +280,7 @@ MonoBehaviour:
   childObject: {fileID: 1486672265527913931}
   realtimeView: {fileID: 5932351523279052667}
   realtimeTransform: {fileID: 5932351523279052664}
-  submenuPrefab: {fileID: 3473750302105048174, guid: c4857ec75dba88941ae9c97581bf0abf,
+  submenuPrefab: {fileID: 1995913713131899186, guid: 5ca282de2b3ea364e9aa6df74546683a,
     type: 3}
   furnitureName: 
   furnitureDescription: 

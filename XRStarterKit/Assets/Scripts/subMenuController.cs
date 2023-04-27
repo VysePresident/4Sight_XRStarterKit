@@ -26,7 +26,7 @@ public class subMenuController : MonoBehaviour
 		// Update the UI Text components with the furniture details
 		furnitureNameText.text = selectionTest.furnitureName;
 		descriptionText.text = selectionTest.furnitureDescription;
-		priceText.text = "$"+selectionTest.furniturePrice.ToString();
+		priceText.text = selectionTest.furniturePrice.ToString();
 		Debug.Log(furnitureNameText.text + descriptionText.text + priceText.text);
 	}
 
@@ -35,12 +35,9 @@ public class subMenuController : MonoBehaviour
 		if (furnitureDetailsPanelInstance == null)
 		{
 			Debug.Log("furnitureDetailsPanelInstance is null");
+			UpdateFurnitureDetailsPanel(currentFurnitureObject);
 			furnitureDetailsPanelInstance = Instantiate(furnitureDetailsPanel);
 			furnitureDetailsPanelInstance.transform.SetParent(transform, false);
-			furnitureNameText = furnitureDetailsPanelInstance.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>();
-			descriptionText = furnitureDetailsPanelInstance.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>();
-			priceText = furnitureDetailsPanelInstance.transform.GetChild(2).gameObject.GetComponent<TextMeshProUGUI>();
-			UpdateFurnitureDetailsPanel(currentFurnitureObject);
 		}
 		else
 		{
@@ -89,6 +86,21 @@ public class subMenuController : MonoBehaviour
 	//	// Implement the logic to add the furniture to the cart
 	//	Debug.Log($"Add {currentFurnitureDetails.furnitureName} to cart");
 	//}
+
+	public void Restart()
+	{
+		// Find all GameObjects with RealtimeView components
+		RealtimeView[] realtimeViews = FindObjectsOfType<RealtimeView>();
+
+		// Iterate through each RealtimeView and destroy the associated GameObject
+		foreach (RealtimeView realtimeView in realtimeViews)
+		{
+			if (realtimeView.gameObject.CompareTag("Furniture"))
+			{
+				Realtime.Destroy(realtimeView.gameObject);
+			}
+		}
+	}
 
 
 	public void CloseARView()
