@@ -276,7 +276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83d9acc7968244a8886f3af591305bcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeProfile: {fileID: 11400000, guid: 31a611a779d3499e8e35f1a2018ca841, type: 2}
+  activeProfile: {fileID: 11400000, guid: 4fe8428fb1286f149b092bb35148752f, type: 2}
 --- !u!4 &224090270
 Transform:
   m_ObjectHideFlags: 0
@@ -965,6 +965,29 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 850523942}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &957883008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36981d974b5546a4cbfa0b4bfa0c0ecb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handleMaterial: {fileID: 0}
+  handleGrabbedMaterial: {fileID: 0}
+  handlePrefab: {fileID: 0}
+  handleSize: 0.016
+  colliderPadding: {x: 0.016, y: 0.016, z: 0.016}
+  drawTetherWhenManipulating: 1
+  handlesIgnoreCollider: {fileID: 0}
+  handlePrefabColliderType: 1
+  showHandleForX: 1
+  showHandleForY: 1
+  showHandleForZ: 1
 --- !u!1 &1052600749
 GameObject:
   m_ObjectHideFlags: 0
@@ -1423,6 +1446,32 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163887713609789822, guid: 013a5da7d2b6b5e429223582c465f137,
+        type: 3}
+      propertyPath: rotationHandlesConfiguration
+      value: 
+      objectReference: {fileID: 957883008}
+    - target: {fileID: 2163887713609789822, guid: 013a5da7d2b6b5e429223582c465f137,
+        type: 3}
+      propertyPath: rotateStarted.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163887713609789822, guid: 013a5da7d2b6b5e429223582c465f137,
+        type: 3}
+      propertyPath: rotateStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163887713609789822, guid: 013a5da7d2b6b5e429223582c465f137,
+        type: 3}
+      propertyPath: rotateStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11500000, guid: 6989015e8e325c545a541addbd062437,
+        type: 3}
+    - target: {fileID: 2163887713609789822, guid: 013a5da7d2b6b5e429223582c465f137,
+        type: 3}
+      propertyPath: rotateStarted.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5134518511801270118, guid: 013a5da7d2b6b5e429223582c465f137,
         type: 3}
