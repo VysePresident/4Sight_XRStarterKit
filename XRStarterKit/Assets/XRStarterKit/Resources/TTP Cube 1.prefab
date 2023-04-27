@@ -184,6 +184,9 @@ MonoBehaviour:
   realtimeTransform: {fileID: 1427137917}
   submenuPrefab: {fileID: 1995913713131899186, guid: 5ca282de2b3ea364e9aa6df74546683a,
     type: 3}
+  furnitureName: 
+  furnitureDescription: 
+  furniturePrice: 0
   RT: 
 --- !u!114 &5401023866889312060
 MonoBehaviour:
@@ -233,10 +236,34 @@ MonoBehaviour:
   constraintsManager: {fileID: 5401023866889312060}
   rotateStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5134518511801270118}
+        m_TargetAssemblyTypeName: SelectionTest, Assembly-CSharp
+        m_MethodName: keep_selection
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   rotateStopped:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5134518511801270118}
+        m_TargetAssemblyTypeName: SelectionTest, Assembly-CSharp
+        m_MethodName: keep_selection
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   scaleStarted:
     m_PersistentCalls:
       m_Calls: []
