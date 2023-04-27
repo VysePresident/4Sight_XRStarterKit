@@ -185,10 +185,9 @@ MonoBehaviour:
   realtimeTransform: {fileID: 5792219657074355645}
   submenuPrefab: {fileID: 3473750302105048174, guid: c4857ec75dba88941ae9c97581bf0abf,
     type: 3}
-  furnitureName: 3 Seat Couch
-  furnitureSize: 78"W x 37"D x 39"H
-  furniturePrice: 599.99
-  furnitureTexture: Leather
+  furnitureName: 3Seat
+  furnitureDescription: Test
+  furniturePrice: 0
   RT: 
 --- !u!114 &701480252469971487
 MonoBehaviour:

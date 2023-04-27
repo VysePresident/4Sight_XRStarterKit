@@ -282,10 +282,9 @@ MonoBehaviour:
   realtimeTransform: {fileID: 5932351523279052664}
   submenuPrefab: {fileID: 3473750302105048174, guid: c4857ec75dba88941ae9c97581bf0abf,
     type: 3}
-  furnitureName: Mirror Comode
-  furnitureSize: 32"W x 16"D x 30"H
-  furniturePrice: 157.99
-  furnitureTexture: Wood/Glass
+  furnitureName: 
+  furnitureDescription: 
+  furniturePrice: 0
   RT: 
 --- !u!114 &1776591783921446201
 MonoBehaviour:

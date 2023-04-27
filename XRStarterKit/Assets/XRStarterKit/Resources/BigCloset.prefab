@@ -185,10 +185,9 @@ MonoBehaviour:
   realtimeTransform: {fileID: 1082434587518684119}
   submenuPrefab: {fileID: 3473750302105048174, guid: c4857ec75dba88941ae9c97581bf0abf,
     type: 3}
-  furnitureName: Large Closet
-  furnitureSize: 38"W x 21"D x 66"H
-  furniturePrice: 614.99
-  furnitureTexture: Wood
+  furnitureName: BigCloset
+  furnitureDescription: test1
+  furniturePrice: 0
   RT: 
 --- !u!114 &5040053630081546646
 MonoBehaviour:

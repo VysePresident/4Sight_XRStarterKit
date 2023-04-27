@@ -282,10 +282,9 @@ MonoBehaviour:
   realtimeTransform: {fileID: 5620162031912518546}
   submenuPrefab: {fileID: 3473750302105048174, guid: c4857ec75dba88941ae9c97581bf0abf,
     type: 3}
-  furnitureName: 2 Seat Couch
-  furnitureSize: 75"W x 35"D x 36"H
-  furniturePrice: 379.99
-  furnitureTexture: Leather
+  furnitureName: Couch
+  furnitureDescription: 
+  furniturePrice: 0
   RT: 
 --- !u!114 &507386134653891027
 MonoBehaviour:

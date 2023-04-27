@@ -9,9 +9,8 @@ using System.Collections;
 public class subMenuController : MonoBehaviour
 {
 	public TextMeshProUGUI furnitureNameText;
-	public TextMeshProUGUI sizeText;
+	public TextMeshProUGUI descriptionText;
 	public TextMeshProUGUI priceText;
-	public TextMeshProUGUI textureText;
 
 	public GameObject currentFurnitureObject;
 	private RealtimeView furnitureRealtimeView;
@@ -26,10 +25,9 @@ public class subMenuController : MonoBehaviour
 
 		// Update the UI Text components with the furniture details
 		furnitureNameText.text = selectionTest.furnitureName;
-		sizeText.text = selectionTest.furnitureSize;
+		descriptionText.text = selectionTest.furnitureDescription;
 		priceText.text = "$"+selectionTest.furniturePrice.ToString();
-		textureText.text = selectionTest.furnitureTexture;
-		Debug.Log(furnitureNameText.text + sizeText.text + priceText.text);
+		Debug.Log(furnitureNameText.text + descriptionText.text + priceText.text);
 	}
 
 	public void ToggleFurnitureDetailsPanel()
@@ -39,10 +37,9 @@ public class subMenuController : MonoBehaviour
 			Debug.Log("furnitureDetailsPanelInstance is null");
 			furnitureDetailsPanelInstance = Instantiate(furnitureDetailsPanel);
 			furnitureDetailsPanelInstance.transform.SetParent(transform, false);
-			furnitureNameText = furnitureDetailsPanelInstance.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>();
-			sizeText = furnitureDetailsPanelInstance.transform.GetChild(3).gameObject.GetComponent<TextMeshProUGUI>();
-			priceText = furnitureDetailsPanelInstance.transform.GetChild(5).gameObject.GetComponent<TextMeshProUGUI>();
-			textureText = furnitureDetailsPanelInstance.transform.GetChild(7).gameObject.GetComponent<TextMeshProUGUI>();
+			furnitureNameText = furnitureDetailsPanelInstance.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>();
+			descriptionText = furnitureDetailsPanelInstance.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>();
+			priceText = furnitureDetailsPanelInstance.transform.GetChild(2).gameObject.GetComponent<TextMeshProUGUI>();
 			UpdateFurnitureDetailsPanel(currentFurnitureObject);
 		}
 		else
