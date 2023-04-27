@@ -809,7 +809,7 @@ PlayerSettings:
     Android: NORMCORE;VUFORIA_ANDROID_SETTINGS;USE_INPUT_SYSTEM_POSE_CONTROL
     Standalone: NORMCORE;USE_INPUT_SYSTEM_POSE_CONTROL
     Windows Store Apps: VUFORIA_WSA_SETTINGS;USE_INPUT_SYSTEM_POSE_CONTROL
-    iPhone: VUFORIA_IOS_SETTINGS
+    iPhone: VUFORIA_IOS_SETTINGS;UNITY_XR_ARKIT_LOADER_ENABLED
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
