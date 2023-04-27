@@ -2168,6 +2168,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TTP Cube
       objectReference: {fileID: 0}
+    - target: {fileID: 1861168696414987438, guid: 013a5da7d2b6b5e429223582c465f137,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1861168696414987472, guid: 013a5da7d2b6b5e429223582c465f137,
         type: 3}
       propertyPath: m_RootOrder
