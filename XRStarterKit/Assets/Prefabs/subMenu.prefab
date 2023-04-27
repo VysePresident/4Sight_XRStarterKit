@@ -1294,11 +1294,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20a2ff4384affa542bcf06d6fa8b6f22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  furnitureNameText: {fileID: 0}
-  descriptionText: {fileID: 0}
-  priceText: {fileID: 0}
+  furnitureNameText: {fileID: 3015345697400981429, guid: 52865df0e36fc9941b1fd07278c33997,
+    type: 3}
+  descriptionText: {fileID: 7290876288584063098, guid: f8eff64ac9856024c99c640d9c7c9376,
+    type: 3}
+  priceText: {fileID: 1591587129724280722, guid: c387a2d61c53e7e4bab73185f7750a7b,
+    type: 3}
   currentFurnitureObject: {fileID: 0}
-  furnitureDetailsPanel: {fileID: 0}
+  furnitureDetailsPanel: {fileID: 8915027418922494016, guid: 8134cebc114c265459365841e4b8a4b2,
+    type: 3}
 --- !u!225 &6561617227040728651
 CanvasGroup:
   m_ObjectHideFlags: 0

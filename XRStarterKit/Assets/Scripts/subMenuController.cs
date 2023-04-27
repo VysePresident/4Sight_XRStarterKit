@@ -3,6 +3,8 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Normal.Realtime;
 using TMPro;
+using System.Collections;
+
 
 public class subMenuController : MonoBehaviour
 {
@@ -33,10 +35,9 @@ public class subMenuController : MonoBehaviour
 		if (furnitureDetailsPanelInstance == null)
 		{
 			Debug.Log("furnitureDetailsPanelInstance is null");
+			UpdateFurnitureDetailsPanel(currentFurnitureObject);
 			furnitureDetailsPanelInstance = Instantiate(furnitureDetailsPanel);
 			furnitureDetailsPanelInstance.transform.SetParent(transform, false);
-
-			UpdateFurnitureDetailsPanel(currentFurnitureObject);
 		}
 		else
 		{
@@ -44,6 +45,13 @@ public class subMenuController : MonoBehaviour
 			furnitureDetailsPanelInstance = null;
 		}
 	}
+
+	private IEnumerator UpdateFurnitureDetailsPanelWithDelay(GameObject selectedFurniture)
+	{
+		yield return new WaitForEndOfFrame();
+		UpdateFurnitureDetailsPanel(selectedFurniture);
+	}
+
 
 	public void ShowDetails()
 	{
