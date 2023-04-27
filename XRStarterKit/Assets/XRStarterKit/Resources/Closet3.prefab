@@ -282,9 +282,10 @@ MonoBehaviour:
   realtimeTransform: {fileID: 5072177572415664154}
   submenuPrefab: {fileID: 3473750302105048174, guid: c4857ec75dba88941ae9c97581bf0abf,
     type: 3}
-  furnitureName: Closet3
-  furnitureDescription: 123
-  furniturePrice: 0
+  furnitureName: Medium Closet
+  furnitureSize: 30"W x 16"D x 33"H
+  furniturePrice: 479.99
+  furnitureTexture: Wood
   RT: 
 --- !u!114 &907392002243527259
 MonoBehaviour:

@@ -25,8 +25,9 @@ public class SelectionTest : MonoBehaviour
 
 	// Add fields for furniture details
 	public string furnitureName;
-	public string furnitureDescription;
+	public string furnitureSize;
 	public float furniturePrice;
+	public string furnitureTexture;
 
 	// ALEX - EXPERIMENTAL EDITS TO ALLOW ROTATION WHILE USING BOUNDS CONTROLS:
 	//public BoundsControl boundsControl;
