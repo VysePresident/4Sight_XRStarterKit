@@ -282,9 +282,10 @@ MonoBehaviour:
   realtimeTransform: {fileID: 7366923268449647598}
   submenuPrefab: {fileID: 3473750302105048174, guid: c4857ec75dba88941ae9c97581bf0abf,
     type: 3}
-  furnitureName: Fotel3
-  furnitureDescription: 
-  furniturePrice: 0
+  furnitureName: Armchair
+  furnitureSize: 34"W x 36"D x 33"H
+  furniturePrice: 149.99
+  furnitureTexture: Leather, Wood
   RT: 
 --- !u!114 &3227070172276214191
 MonoBehaviour:

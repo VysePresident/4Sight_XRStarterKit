@@ -283,8 +283,9 @@ MonoBehaviour:
   submenuPrefab: {fileID: 3473750302105048174, guid: c4857ec75dba88941ae9c97581bf0abf,
     type: 3}
   furnitureName: Chair
-  furnitureDescription: hello
-  furniturePrice: 0
+  furnitureSize: 19"W x 23"D x 34"H
+  furniturePrice: 69.99
+  furnitureTexture: Plastic
   RT: 
 --- !u!114 &3842554406050065974
 MonoBehaviour:
