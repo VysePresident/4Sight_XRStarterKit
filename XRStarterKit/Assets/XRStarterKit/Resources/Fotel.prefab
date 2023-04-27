@@ -185,10 +185,9 @@ MonoBehaviour:
   realtimeTransform: {fileID: 833458413012600290}
   submenuPrefab: {fileID: 3473750302105048174, guid: c4857ec75dba88941ae9c97581bf0abf,
     type: 3}
-  furnitureName: Single Seat Couch
-  furnitureSize: 35"W x 34"D x 36"H
-  furniturePrice: 149.99
-  furnitureTexture: Leather
+  furnitureName: Fotel
+  furnitureDescription: Test
+  furniturePrice: 0
   RT: 
 --- !u!114 &4712243597144307619
 MonoBehaviour:

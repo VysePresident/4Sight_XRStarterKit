@@ -282,10 +282,9 @@ MonoBehaviour:
   realtimeTransform: {fileID: 5024086178483617495}
   submenuPrefab: {fileID: 3473750302105048174, guid: c4857ec75dba88941ae9c97581bf0abf,
     type: 3}
-  furnitureName: Metal Tabel
-  furnitureSize: 48"W x 26"D x 20"H
-  furniturePrice: 114.99
-  furnitureTexture: Metal
+  furnitureName: MetalTabel
+  furnitureDescription: 
+  furniturePrice: 0
   RT: 
 --- !u!114 &1102653300542491798
 MonoBehaviour:

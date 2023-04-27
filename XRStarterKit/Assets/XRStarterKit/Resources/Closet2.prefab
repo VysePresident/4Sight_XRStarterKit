@@ -282,10 +282,9 @@ MonoBehaviour:
   realtimeTransform: {fileID: 4699530409797686934}
   submenuPrefab: {fileID: 3473750302105048174, guid: c4857ec75dba88941ae9c97581bf0abf,
     type: 3}
-  furnitureName: Small Closet
-  furnitureSize: 30"W x 16"D x 26"H
-  furniturePrice: 259.99
-  furnitureTexture: Wood
+  furnitureName: Closet2
+  furnitureDescription: sdf
+  furniturePrice: 0
   RT: 
 --- !u!114 &850156225414522071
 MonoBehaviour:
