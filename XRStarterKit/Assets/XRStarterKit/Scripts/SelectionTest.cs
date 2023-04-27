@@ -166,8 +166,10 @@ public class SelectionTest : MonoBehaviour
 		// In SelectionTest.cs, inside the Select() method
 		if (submenuInstance == null)
 		{
-			submenuInstance = Instantiate(submenuPrefab, childObject.transform.position, Quaternion.identity);
-			submenuInstance.transform.SetParent(childObject.transform);
+			GameObject canvasObject = GameObject.Find("Canvas");
+
+			submenuInstance = Instantiate(submenuPrefab, canvasObject.transform.position, Quaternion.identity);
+			submenuInstance.transform.SetParent(canvasObject.transform);
 
 			// Pass the selected furniture's details, the furniture object, and the RealtimeView component to the submenu
 			//FurnitureDetails furnitureDetails = GetComponent<FurnitureDetails>();
