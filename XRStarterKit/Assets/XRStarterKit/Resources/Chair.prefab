@@ -244,7 +244,7 @@ MonoBehaviour:
   smoothing: 1
   lifetime: 0
   autoStart: 0
-  defaultPlacementDistance: 2.5
+  defaultPlacementDistance: 1.5
   maxRaycastDistance: 20
   surfaceNormalOffset: 0
   useDefaultSurfaceNormalOffset: 0
@@ -285,6 +285,8 @@ MonoBehaviour:
   furnitureName: Chair
   furnitureDescription: hello
   furniturePrice: 0
+  boundsControl: {fileID: 0}
+  areBoundsRotating: 0
   RT: 
 --- !u!114 &3842554406050065974
 MonoBehaviour:
@@ -347,36 +349,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 4100049349381523052}
-        m_TargetAssemblyTypeName: SelectionTest, Assembly-CSharp
-        m_MethodName: disableTTP
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   rotateStopped:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4100049349381523052}
         m_TargetAssemblyTypeName: SelectionTest, Assembly-CSharp
         m_MethodName: keep_selection
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4100049349381523052}
-        m_TargetAssemblyTypeName: SelectionTest, Assembly-CSharp
-        m_MethodName: InvokeEnableTTP
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
